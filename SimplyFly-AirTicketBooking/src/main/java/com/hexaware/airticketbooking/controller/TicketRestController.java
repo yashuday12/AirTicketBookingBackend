@@ -25,7 +25,7 @@ import com.hexaware.airticketbooking.services.ITicketService;
  * Description: This class represents an Ticket Rest Controller, which handles HTTP requests related to Tickets.
  */
 @RestController
-@RequestMapping("/api/ticket")
+@RequestMapping("/api/v1/ticket")
 public class TicketRestController {
 
 	private ITicketService ticketService;

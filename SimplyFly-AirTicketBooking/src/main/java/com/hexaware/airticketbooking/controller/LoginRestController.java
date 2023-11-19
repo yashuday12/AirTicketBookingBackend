@@ -19,7 +19,7 @@ import com.hexaware.airticketbooking.services.JwtService;
  * Description: This class represents an Login Rest Controller, which handles the credentials entered by Admin,User and FlightOwner
  */
 @RestController
-@RequestMapping("/api/login")
+@RequestMapping("/api/v1/login")
 public class LoginRestController {
 	
 	@Autowired

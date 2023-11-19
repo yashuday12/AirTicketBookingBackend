@@ -23,7 +23,7 @@ import com.hexaware.airticketbooking.services.IPassengerService;
  * Description: This class represents an Passenger Rest Controller, which handles HTTP requests related to Passengers.
  */
 @RestController
-@RequestMapping("/api/passenger")
+@RequestMapping("/api/v1/passenger")
 public class PassengerRestController {
 	
 	private IPassengerService passengerService;

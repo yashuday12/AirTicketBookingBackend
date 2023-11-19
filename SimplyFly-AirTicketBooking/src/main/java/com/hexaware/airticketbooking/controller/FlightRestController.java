@@ -27,7 +27,7 @@ import jakarta.validation.Valid;
  * Description: This class represents an Flight Rest Controller, which handles HTTP requests related to Flights.
  */
 @RestController
-@RequestMapping("/api/flight")
+@RequestMapping("/api/v1/flight")
 public class FlightRestController {
 
 	private IFlightService flightService;

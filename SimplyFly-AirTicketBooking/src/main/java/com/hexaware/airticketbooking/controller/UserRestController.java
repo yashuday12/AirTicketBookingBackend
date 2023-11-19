@@ -29,7 +29,7 @@ import com.hexaware.airticketbooking.services.IUserService;
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/api/user")
+@RequestMapping("/api/v1/user")
 public class UserRestController {
 	private IUserService userService;
 	Logger logger = LoggerFactory.getLogger(UserRestController.class);

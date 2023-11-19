@@ -30,7 +30,7 @@ import jakarta.validation.Valid;
  * Description: This class represents an Admin Rest Controller, which handles HTTP requests related to admin.
  */
 @RestController
-@RequestMapping("/api/admin")
+@RequestMapping("/api/v1/admin")
 public class AdminRestController {
 	private IAdminService adminService;
     Logger logger = LoggerFactory.getLogger(AdminRestController.class);

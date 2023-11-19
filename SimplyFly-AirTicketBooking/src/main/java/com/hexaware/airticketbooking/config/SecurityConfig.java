@@ -39,9 +39,9 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {      //normal spring security+JWT
         return http.csrf().disable()               
                 .authorizeHttpRequests()
-                .requestMatchers("/api/admin/authenticate","/api/admin/addadmin","/api/user/adduser","/api/login/adminlogin","/api/login/userlogin","/api/login/flightownerlogin", "/v3/api-docs/**", "/swagger-ui/**","/swagger-resources/**").permitAll()
+                .requestMatchers("/api/v1/admin/authenticate","/api/v1/admin/addadmin","/api/v1/user/adduser","/api/v1/login/adminlogin","/api/v1/login/userlogin","/api/v1/login/flightownerlogin", "/v3/api-docs/**", "/swagger-ui/**","/swagger-resources/**").permitAll()
                 .and()
-                .authorizeHttpRequests().requestMatchers("/api/user/**","/api/admin/**","/api/flightowner/**","/api/flight/**","/api/passenger/**","/api/ticket/**","/api/payment/**")
+                .authorizeHttpRequests().requestMatchers("/api/v1/user/**","/api/v1/admin/**","/api/v1/flightowner/**","/api/v1/flight/**","/api/v1/passenger/**","/api/v1/ticket/**","/api/v1/payment/**")
                 .authenticated().and() 
                 .sessionManagement()
                 .sessionCreationPolicy(SessionCreationPolicy.STATELESS)

@@ -19,7 +19,7 @@ import com.hexaware.airticketbooking.services.IPaymentService;
  * Description: This class represents an Payement Rest Controller, which handles HTTP requests to get payment history.
  */
 @RestController
-@RequestMapping("/api/payment")
+@RequestMapping("/api/v1/payment")
 public class PaymentRestController {
 	@Autowired
 	IPaymentService service;

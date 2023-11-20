@@ -17,13 +17,14 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import com.hexaware.airticketbooking.dto.UserDTO;
 import com.hexaware.airticketbooking.entities.User;
 import com.hexaware.airticketbooking.exceptions.UserNotFoundException;
 import com.hexaware.airticketbooking.repository.IUserRepository;
-
+@SpringBootTest
 class UserServiceImpTest {
 	 @Mock
 	    private PasswordEncoder passwordEncoder;
@@ -128,7 +129,7 @@ class UserServiceImpTest {
 	        when(userRepository.findAll()).thenReturn(users);
 
 	        
-	        List<User> result = userService.getAllUsers();
+	        List<UserDTO> result = userService.getAllUsers();
 
 	        
 	        assertNotNull(result);

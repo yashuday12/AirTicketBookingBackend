@@ -1,5 +1,6 @@
 package com.hexaware.airticketbooking.services;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.slf4j.Logger;
@@ -98,10 +99,24 @@ public class UserServiceImp implements IUserService {
 	}
 
 	@Override
-	public List<User> getAllUsers() throws UserNotFoundException{
+	public List<UserDTO> getAllUsers() throws UserNotFoundException{
 		logger.info("User Service Implementation-Fetching all users from the repository");
-
-		return userRepository.findAll();
+		List<User> user=userRepository.findAll();
+		List<UserDTO> userDto=new ArrayList<>();
+		for(User userTemp:user) {
+			UserDTO userDtoTemp=new UserDTO();
+			userDtoTemp.setUserId(userTemp.getUserId());
+			userDtoTemp.setAddress(userTemp.getAddress());
+			userDtoTemp.setContactNumber(userTemp.getContactNumber());
+			userDtoTemp.setGender(userTemp.getGender());
+			userDtoTemp.setDateOfBirth(userTemp.getDateOfBirth());
+			userDtoTemp.setUserEmail(userTemp.getUserEmail());
+			userDtoTemp.setUserName(userTemp.getUserName());
+			userDtoTemp.setPassword(userTemp.getPassword());
+			userDtoTemp.setWallet(userTemp.getWallet());
+			userDto.add(userDtoTemp);	
+		}
+		return userDto;
 	}
 
 	
@@ -129,9 +144,9 @@ public class UserServiceImp implements IUserService {
 	}
 
 	@Override
-	public long rechargeWallet(int userId, long Amount) {
+	public long rechargeWallet(int userId, long amount) {
 		User user=userRepository.findById(userId).orElse(new User());
-		user.setWallet(user.getWallet()+Amount);
+		user.setWallet(user.getWallet()+amount);
 		User updatedUser=userRepository.save(user);
 		return updatedUser.getWallet();
 	}

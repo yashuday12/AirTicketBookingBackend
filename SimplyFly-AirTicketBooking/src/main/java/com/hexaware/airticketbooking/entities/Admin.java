@@ -56,7 +56,7 @@ public class Admin {
 		return "Admin [adminId=" + adminId + ", adminName=" + adminName + ", adminPassword=" + adminPassword + "]";
 	}
 	public String getRoles() {
-		return roles;
+		return  roles;
 	}
 	
 	

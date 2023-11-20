@@ -15,8 +15,8 @@ public interface IUserService {
 	public UserDTO editUserProfile(UserDTO userDto);
 	public void deleteUserProfile(int userId);
 	public UserDTO getByUserId(int userId) throws UserNotFoundException;
-	public List<User> getAllUsers() throws UserNotFoundException;
-	public long rechargeWallet(int userId ,long Ammount);
+	public List<UserDTO> getAllUsers() throws UserNotFoundException;
+	public long rechargeWallet(int userId ,long amount);
 	public UserDTO changePassword(int userId, String password); 
 	public void sendEmailOnRegistration(User user);
 

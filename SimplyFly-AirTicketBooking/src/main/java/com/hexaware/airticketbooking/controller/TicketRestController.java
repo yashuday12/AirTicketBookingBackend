@@ -56,7 +56,7 @@ public class TicketRestController {
 	}
 	
 	@GetMapping("/getticketbyid/{ticketId}")
-	@PreAuthorize("hasAnyAuthority('ROLE_FLIGHTOWNER,ROLE_USER')")
+	@PreAuthorize("hasAnyAuthority('ROLE_FLIGHTOWNER','ROLE_USER')")
 	public TicketDTO fetchBookingDetailsByTicketId(@PathVariable int ticketId) {
         logger.info("Received request to fetch booking details for ticketId: {}", ticketId);
 

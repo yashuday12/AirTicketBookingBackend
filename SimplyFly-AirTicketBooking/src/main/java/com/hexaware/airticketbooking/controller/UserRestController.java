@@ -22,7 +22,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.hexaware.airticketbooking.dto.UserDTO;
-import com.hexaware.airticketbooking.entities.User;
 import com.hexaware.airticketbooking.exceptions.UserNotFoundException;
 import com.hexaware.airticketbooking.services.IUserService;
 
@@ -72,14 +71,14 @@ return userService.registerUser(userDto);
 	}
 	@GetMapping("/getallusers")
 	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN')")
-	public List<User> getAllUsers() {
+	public List<UserDTO> getAllUsers() {
         logger.info("Received request to get all registered users");
-        List<User> user= userService.getAllUsers();
-		if (user.isEmpty()) {
+        List<UserDTO> userDto= userService.getAllUsers();
+		if (userDto.isEmpty()) {
             logger.info("No registered users found");
             throw new UserNotFoundException(HttpStatus.NOT_FOUND, "There are no registered users");
 		}
-		return user;
+		return userDto;
 	}
 	@PutMapping("/changePassword/{userId}/{password}")
 	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
@@ -90,8 +89,8 @@ return userService.registerUser(userDto);
 	}
 	@PutMapping("/rechargewallet")
 	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
-	public ResponseEntity<String> rechargeWallet(int UserId,long Ammount) {
-		return new ResponseEntity<>("Your Current  wallet has :"+userService.rechargeWallet(UserId, Ammount),HttpStatus.ACCEPTED);
+	public ResponseEntity<String> rechargeWallet(int userId,long amount) {
+		return new ResponseEntity<>("Your Current  wallet has :"+userService.rechargeWallet(userId, amount),HttpStatus.ACCEPTED);
 		
 	}
 	

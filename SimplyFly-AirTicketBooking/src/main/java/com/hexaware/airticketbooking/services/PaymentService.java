@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
 import com.hexaware.airticketbooking.dto.PaymentDTO;
 import com.hexaware.airticketbooking.entities.Payment;
 import com.hexaware.airticketbooking.repository.IPaymentRepository;
-import com.hexaware.airticketbooking.repository.ITicketRepository;
 /*
 * Author: Yashwanth and UdayKiran
 * LastModifiedDate: 19-11-2023
@@ -20,13 +19,12 @@ import com.hexaware.airticketbooking.repository.ITicketRepository;
 @Service
 public class PaymentService implements IPaymentService {
 	private IPaymentRepository paymentRepository;
-	private ITicketRepository ticketRepository;
+	
 	
 
-	public PaymentService(IPaymentRepository paymentRepository,ITicketRepository ticketRepository) {
+	public PaymentService(IPaymentRepository paymentRepository) {
 		super();
 		this.paymentRepository = paymentRepository;
-		this.ticketRepository=ticketRepository;
 	}
 
     Logger logger = LoggerFactory.getLogger(PaymentService.class);

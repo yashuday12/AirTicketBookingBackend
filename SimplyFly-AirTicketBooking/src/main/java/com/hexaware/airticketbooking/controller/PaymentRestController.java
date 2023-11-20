@@ -29,8 +29,7 @@ public class PaymentRestController {
 	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
 	public List<PaymentDTO> viewPaymentByTicketId(@PathVariable int ticketId){
         logger.info("Received request to view payment history for ticketId: {}", ticketId);
-        List<PaymentDTO> payment1=service.viewPaymentHistoryByUserId(ticketId);
-		return payment1;
+        return service.viewPaymentHistoryByUserId(ticketId);
 	}
 }
 

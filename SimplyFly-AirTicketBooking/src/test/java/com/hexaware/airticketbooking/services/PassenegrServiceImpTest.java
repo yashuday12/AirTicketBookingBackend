@@ -16,12 +16,13 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import com.hexaware.airticketbooking.dto.PassengerDTO;
 import com.hexaware.airticketbooking.entities.Passenger;
 import com.hexaware.airticketbooking.exceptions.PassengerNotFoundException;
 import com.hexaware.airticketbooking.repository.IPassengerRepository;
-
+@SpringBootTest
 class PassenegrServiceImpTest {
 
 	@BeforeAll

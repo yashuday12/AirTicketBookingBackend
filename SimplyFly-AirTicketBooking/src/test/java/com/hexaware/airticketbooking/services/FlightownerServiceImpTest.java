@@ -17,13 +17,14 @@ import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import com.hexaware.airticketbooking.dto.FlightOwnerDTO;
 import com.hexaware.airticketbooking.entities.FlightOwner;
 import com.hexaware.airticketbooking.exceptions.FlightOwnerNotFoundException;
 import com.hexaware.airticketbooking.repository.IFlightOwnerRepository;
-
+@SpringBootTest
 class FlightownerServiceImpTest {
      @Mock
 	 private IFlightOwnerRepository flightOwnerRepository;

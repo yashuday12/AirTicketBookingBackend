@@ -44,7 +44,6 @@ public class UserServiceImp implements IUserService {
 		user.setDateOfBirth(userDto.getDateOfBirth());
 		user.setUserEmail(userDto.getUserEmail());
 		user.setPassword(passwordEncoder.encode(userDto.getPassword()));
-		
 		user.setWallet(userDto.getWallet());
 		User user1=userRepository.save(user);
 		logger.info("User Service Implementation - User inserted successfully. User ID: {}", user.getUserId());

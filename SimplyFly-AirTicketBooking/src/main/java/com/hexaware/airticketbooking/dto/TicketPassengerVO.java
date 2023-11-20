@@ -15,6 +15,11 @@ public class TicketPassengerVO {
 		this.ticketDto = ticketDto;
 		this.passengerDto = passengerDto;
 	}
+	
+	public TicketPassengerVO() {
+		super();
+	}
+
 	public TicketDTO getTicketDto() {
 		return ticketDto;
 	}

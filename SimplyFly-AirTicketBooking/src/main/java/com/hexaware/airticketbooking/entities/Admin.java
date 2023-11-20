@@ -21,7 +21,7 @@ public class Admin {
 	private int adminId;
 	private String adminName;
 	private String adminPassword;
-	private static final String roles="ROLE_ADMIN";
+	private final String roles="ROLE_ADMIN";
 	public Admin() {
 		super();
 	}

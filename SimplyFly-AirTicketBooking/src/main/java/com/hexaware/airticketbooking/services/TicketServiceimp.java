@@ -62,6 +62,7 @@ public class TicketServiceimp implements ITicketService {
 			 Ticket ticketDetails =new Ticket();
 			 ticketDetails.setNumberOfPassengers(ticketDto.getNumberOfPassengers());
 			 ticketDetails.setEmail(ticketDto.getEmail());
+			 ticketDetails.setTravelDate(ticketDto.getTravelDate());
 			 ticketDetails.setTotalAmount(flight.getFare()*ticketDetails.getNumberOfPassengers());
 			 User user=userRepository.findByUserName(userName).orElse(new User());
 			 if(user.getWallet() <= ticketDetails.getTotalAmount()){
@@ -84,6 +85,7 @@ public class TicketServiceimp implements ITicketService {
 				 passengerTemp.setPassengerAge(passengerDtoTemp.getPassengerAge());
 				 passengerTemp.setPassengerName(passengerDtoTemp.getPassengerName());
 				 passengerTemp.setPassengerSeatNumber(passengerDtoTemp.getPassengerSeatNumber());
+			     passenger.add(passengerTemp);
 			 }
 			 
 			 for (Passenger passenger1: passenger) {
@@ -110,9 +112,13 @@ public class TicketServiceimp implements ITicketService {
 		 logger.info("Ticket Service Implementation - Deleting Ticket with ID: {}", ticketId);
         Ticket ticket=ticketRepository.findById(ticketId).orElse(new Ticket());
         Flight flight=ticket.getFlight();
+        User user=ticket.getUser();
         int remainingSeats=flight.getNumberOfSeats()+ticket.getNumberOfPassengers();
+        long refundedAmount=(long) (user.getWallet()+ticket.getTotalAmount());       
         flight.setNumberOfSeats(remainingSeats);
+        user.setWallet(refundedAmount);
         flightRepository.save(flight);
+        userRepository.save(user);
 		ticketRepository.deleteById(ticketId);
 		logger.info("Ticket Service Implementation - Ticket Data with ID: {} deleted successfully.", ticketId);
 		   

@@ -25,11 +25,11 @@ public class PaymentRestController {
 	IPaymentService service;
 	Logger logger = LoggerFactory.getLogger(PaymentRestController.class);
 
-	@GetMapping("/history/{ticketId}")
+	@GetMapping("/history/{userId}")
 	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
-	public List<PaymentDTO> viewPaymentByTicketId(@PathVariable int ticketId){
-        logger.info("Received request to view payment history for ticketId: {}", ticketId);
-        return service.viewPaymentHistoryByUserId(ticketId);
+	public List<PaymentDTO> viewPaymentByTicketId(@PathVariable int userId){
+        logger.info("Received request to view payment history for ticketId: {}", userId);
+        return service.viewPaymentHistoryByUserId(userId);
 	}
 }
 

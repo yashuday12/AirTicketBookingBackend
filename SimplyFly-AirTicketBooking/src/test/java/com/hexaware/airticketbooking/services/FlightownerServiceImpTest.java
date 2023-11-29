@@ -126,7 +126,7 @@ class FlightownerServiceImpTest {
 
 	        when(flightOwnerRepository.findAll()).thenReturn(flightOwners);
 
-	        List<FlightOwner> result = flightownerService.viewAllFlightOwners();
+	        List<FlightOwnerDTO> result = flightownerService.viewAllFlightOwners();
 
 	        assertNotNull(result);
 	        assertEquals(flightOwners.size(), result.size());

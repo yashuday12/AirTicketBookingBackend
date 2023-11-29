@@ -21,7 +21,7 @@ public class Admin {
 	private int adminId;
 	private String adminName;
 	private String adminPassword;
-	private final String roles="ROLE_ADMIN";
+	private final String ROLES="ROLE_ADMIN";
 	public Admin() {
 		super();
 	}
@@ -56,7 +56,7 @@ public class Admin {
 		return "Admin [adminId=" + adminId + ", adminName=" + adminName + ", adminPassword=" + adminPassword + "]";
 	}
 	public String getRoles() {
-		return  roles;
+		return  ROLES;
 	}
 	
 	

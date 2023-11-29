@@ -34,7 +34,7 @@ public class FlightOwner {
 	private String flightOwnerEmail;
 	@OneToMany(mappedBy = "flightOwner",cascade = CascadeType.ALL)
 	private List<Flight> flight=new ArrayList<>();
-	private  final String roles="ROLE_FLIGHTOWNER";
+	private  final String ROLES="ROLE_FLIGHTOWNER";
 	public FlightOwner() {
 		super();
 	}
@@ -87,7 +87,7 @@ public class FlightOwner {
 	}
 	
 	public String getRoles() {
-		return roles;
+		return ROLES;
 	}
 	
 	@Override

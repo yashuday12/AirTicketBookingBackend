@@ -44,7 +44,7 @@ public class AdminServiceImp implements IAdminService {
 		Admin admin=new Admin();
 		admin.setAdminId(adminDto.getAdminId());
 		admin.setAdminName(adminDto.getAdminName());
-		admin.setAdminPassword(passwordEncoder.encode(adminDto.getAdminPassword()));
+		admin.setAdminPassword(adminDto.getAdminPassword());
 		
 		Admin adminTemp=adminRepository.save(admin);
 		logger.info("Admin Service Implementation -Updated the Admin data in existing record in  database successfully ");

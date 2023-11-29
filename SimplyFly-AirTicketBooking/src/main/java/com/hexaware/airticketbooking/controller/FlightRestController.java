@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,6 +29,7 @@ import jakarta.validation.Valid;
  */
 @RestController
 @RequestMapping("/api/v1/flight")
+@CrossOrigin(origins="http://localhost:4200/")
 public class FlightRestController {
 
 	private IFlightService flightService;
@@ -39,14 +41,13 @@ public class FlightRestController {
 	}
 	
 	@PostMapping("/addflight/{flightOwnerId}")
-	@PreAuthorize("hasAnyAuthority('ROLE_FLIGHTOWNER')")
 	public FlightDTO addFlight(@RequestBody @Valid FlightDTO flightDto,@PathVariable int flightOwnerId) {
         logger.info("Received request to add flight with flightOwnerId: {}", flightOwnerId);
         return flightService.addFlight(flightDto,flightOwnerId);
 	}
 	
 	@PutMapping("/updateflight/{flightOwnerId}")
-	@PreAuthorize("hasAnyAuthority('ROLE_FLIGHTOWNER')")
+	@PreAuthorize("hasAnyAuthority('ROLE_FLIGHTOWNER','ROLE_ADMIN')")
 	public FlightDTO modifyFlightDetails(@RequestBody @Valid FlightDTO flightDto, @PathVariable int flightOwnerId) {
         logger.info("Received request to update flight details with flightOwnerId: {}", flightOwnerId);
         return flightService.modifyFlightDetails(flightDto,flightOwnerId);
@@ -86,7 +87,6 @@ public class FlightRestController {
 	}
 	
 	@GetMapping("/searchflight/{source}/{destination}")
-	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
 	public List<FlightDTO> searchFlight(@PathVariable String source, @PathVariable String destination){
         logger.info("Received request to search flights from {} to {}", source, destination);
 

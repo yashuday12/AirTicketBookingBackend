@@ -2,15 +2,24 @@ package com.hexaware.airticketbooking.services;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+import com.hexaware.airticketbooking.config.AdminInfoUserDetails;
+import com.hexaware.airticketbooking.config.FlightOwnerInfoUserDetails;
+import com.hexaware.airticketbooking.config.UserInfoUserDetails;
 import com.hexaware.airticketbooking.dto.UserDTO;
+import com.hexaware.airticketbooking.entities.Admin;
+import com.hexaware.airticketbooking.entities.FlightOwner;
 import com.hexaware.airticketbooking.entities.User;
 import com.hexaware.airticketbooking.exceptions.UserNotFoundException;
+import com.hexaware.airticketbooking.repository.IAdminRepository;
+import com.hexaware.airticketbooking.repository.IFlightOwnerRepository;
 import com.hexaware.airticketbooking.repository.IUserRepository;
 
 /*
@@ -23,11 +32,14 @@ import com.hexaware.airticketbooking.repository.IUserRepository;
 public class UserServiceImp implements IUserService {
     private  PasswordEncoder passwordEncoder;	
 	private IUserRepository userRepository;
-	
-	public UserServiceImp(PasswordEncoder passwordEncoder, IUserRepository userRepository) {
+	private IAdminRepository adminRepository;
+	private IFlightOwnerRepository flightOwnerRepository;
+	public UserServiceImp(PasswordEncoder passwordEncoder, IUserRepository userRepository,IAdminRepository adminRepository,IFlightOwnerRepository flightOwnerRepository) {
 		super();
 		this.passwordEncoder = passwordEncoder;
 		this.userRepository = userRepository;
+		this.adminRepository=adminRepository;
+		this.flightOwnerRepository=flightOwnerRepository;
 	}
 	 private final Logger logger = LoggerFactory.getLogger(UserServiceImp.class);
 
@@ -151,4 +163,63 @@ public class UserServiceImp implements IUserService {
 		return updatedUser.getWallet();
 	}
 
-}
+	@Override
+	public String getLoginRole(String name) {
+		String role;
+		System.out.println(name);
+		String adminInfo = adminRepository.getRoleByAdminName(name);
+
+	    if (adminInfo!=null) {
+	        role=adminInfo;
+	    }
+	    else {
+	        String userInfo = userRepository.getRoleByUserName(name);
+
+	        if (userInfo!=null) {
+	        	role=userInfo;
+	        }
+	           
+	        else {
+	            String ownerInfo = flightOwnerRepository.getRoleByFlightOwnerName(name);
+
+	            if (ownerInfo!=null) {
+	            	role=ownerInfo;
+	            }   
+	            else {
+	                throw new UsernameNotFoundException("User not found: " + name);
+	            }
+	        }
+	    
+	    }
+	    return role;
+	}
+	@Override
+	public int getLoginId(String name) {
+		int id;
+		Optional<Admin> adminInfo = adminRepository.findByAdminName(name);
+      
+		if (adminInfo.isPresent()) {
+            Admin admin = adminInfo.get();
+            id=admin.getAdminId();
+        } else {
+            Optional<User> userInfo = userRepository.findByUserName(name);
+
+            if (userInfo.isPresent()) {
+                User user = userInfo.get();
+                id=user.getUserId();
+            } else {
+                Optional<FlightOwner> ownerInfo = flightOwnerRepository.findByFlightOwnerName(name);
+
+                if (ownerInfo.isPresent()) {
+                    FlightOwner owner = ownerInfo.get();
+                    id=owner.getFlightOwnerId();
+                } else {
+                    throw new UsernameNotFoundException("User not found: " + name);
+                }
+            }
+        }
+		return id;
+    }
+	}
+
+

@@ -12,11 +12,11 @@ import com.hexaware.airticketbooking.exceptions.FlightOwnerNotFoundException;
  * Description: This is Service Interface of FlightOwner. Abstract methods are declared and they are implemented in service implementation classes. */
 
 public interface IFlightOwnerService {
-	public FlightOwnerDTO addFlightOwner(FlightOwnerDTO flightOwnerDto);
-	public FlightOwnerDTO editFlightOwnerProfile(FlightOwnerDTO flightOwnerDto);
-	public void deleteFlightOwner(int flightOwnerId );
-	public FlightOwnerDTO getFlightOwnerDetailsById(int flightOwnerId)throws FlightOwnerNotFoundException;
-	public List<FlightOwner> viewAllFlightOwners() throws FlightOwnerNotFoundException;
+	public FlightOwnerDTO addFlightOwner(FlightOwnerDTO flightOwnerDto);// Using this method we can add flightowner details
+	public FlightOwnerDTO editFlightOwnerProfile(FlightOwnerDTO flightOwnerDto);//This method will help us in editing flightowner details
+	public void deleteFlightOwner(int flightOwnerId );// Flight Owner can be deleted
+	public FlightOwnerDTO getFlightOwnerDetailsById(int flightOwnerId)throws FlightOwnerNotFoundException;//we can fetch flightowner details by using id;
+	public List<FlightOwnerDTO> viewAllFlightOwners() throws FlightOwnerNotFoundException;//It is used to fetch and display all flightowners
 	
 
 }

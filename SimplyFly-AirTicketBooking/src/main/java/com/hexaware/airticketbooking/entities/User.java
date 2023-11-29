@@ -38,7 +38,7 @@ public class User {
 	@OneToMany(cascade = CascadeType.ALL,mappedBy = "user")
 	@JsonIgnore
 	private List<Ticket> ticket=new ArrayList<>();
-	private final String roles="ROLE_USER";
+	private final String ROLES="ROLE_USER";
 	private long wallet;
 	@OneToMany(mappedBy="user",cascade=CascadeType.ALL)
 	@JsonIgnore
@@ -125,7 +125,7 @@ public class User {
 	}
 	
 	public String getRoles() {
-		return roles;
+		return ROLES;
 	}
 	
 	public long getWallet() {

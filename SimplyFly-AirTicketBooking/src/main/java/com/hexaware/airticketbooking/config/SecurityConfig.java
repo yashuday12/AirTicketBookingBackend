@@ -37,9 +37,11 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {      //normal spring security+JWT
-        return http.csrf().disable()               
-                .authorizeHttpRequests()
-                .requestMatchers("/api/v1/admin/authenticate","/api/v1/admin/addadmin","/api/v1/user/adduser","/api/v1/login/adminlogin","/api/v1/login/userlogin","/api/v1/login/flightownerlogin", "/v3/api-docs/**", "/swagger-ui/**","/swagger-resources/**").permitAll()
+        return http.csrf().disable()
+        		 .cors()
+        		 .and()
+        		 .authorizeHttpRequests()
+                .requestMatchers("/api/v1/admin/authenticate","/api/v1/admin/addadmin","/api/v1/user/adduser","/api/v1/login/adminlogin","/api/v1/flight/addflight/{flightOwnerId}","/api/v1/login/userlogin","/api/v1/login/flightownerlogin","/api/v1/login/getrole/{name}","/api/v1/flight/searchflight/{source}/{destination}","/api/v1/login/getid/{name}", "/v3/api-docs/**", "/swagger-ui/**","/swagger-resources/**").permitAll()
                 .and()
                 .authorizeHttpRequests().requestMatchers("/api/v1/user/**","/api/v1/admin/**","/api/v1/flightowner/**","/api/v1/flight/**","/api/v1/passenger/**","/api/v1/ticket/**","/api/v1/payment/**")
                 .authenticated().and() 
@@ -57,7 +59,7 @@ public class SecurityConfig {
     }
 
     @Bean
-    public AuthenticationProvider authenticationProvider(){   //normal spring security + JWT
+    public AuthenticationProvider authenticationProvider(){   
         DaoAuthenticationProvider authenticationProvider=new DaoAuthenticationProvider();
         authenticationProvider.setUserDetailsService(userDetailsService());
         authenticationProvider.setPasswordEncoder(passwordEncoder());

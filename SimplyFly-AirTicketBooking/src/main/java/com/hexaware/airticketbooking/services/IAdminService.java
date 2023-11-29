@@ -11,9 +11,9 @@ import com.hexaware.airticketbooking.exceptions.AdminNotFoundException;
  * Description: This is Service Interface of Admin. Abstract methods are declared and they are implemented in service implementation classes. */
 
 public interface IAdminService {
-	public AdminDTO addAdmin(AdminDTO adminDto);
-	public AdminDTO editAdminProfile(AdminDTO adminDto);
-	public void deleteAdminAccount(int adminId);
-	public Admin getAdminProfileById(int adminId)throws AdminNotFoundException;
-	public List<Admin> viewAllAdmin() throws AdminNotFoundException;
+	public AdminDTO addAdmin(AdminDTO adminDto);// It is used to register  Admin details.
+	public AdminDTO editAdminProfile(AdminDTO adminDto);// This method can be used to edit Admin details.
+	public void deleteAdminAccount(int adminId);// It is used to delete admin
+	public Admin getAdminProfileById(int adminId)throws AdminNotFoundException;// It can be used to edit admin detils
+	public List<Admin> viewAllAdmin() throws AdminNotFoundException;//It is used to display all admin details
 }

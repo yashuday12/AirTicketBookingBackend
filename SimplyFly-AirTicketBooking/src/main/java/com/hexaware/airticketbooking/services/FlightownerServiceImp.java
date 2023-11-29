@@ -1,5 +1,6 @@
 package com.hexaware.airticketbooking.services;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -73,9 +74,20 @@ public class FlightownerServiceImp implements IFlightOwnerService {
 	}
 
 	@Override
-	public List<FlightOwner> viewAllFlightOwners()throws FlightOwnerNotFoundException {
+	public List<FlightOwnerDTO> viewAllFlightOwners()throws FlightOwnerNotFoundException {
         logger.info("Flight Owner Service Implementation - Fetching all Flight Owners");
-		return flightOwnerRepository.findAll();
+		List<FlightOwner>flightOwner=flightOwnerRepository.findAll();
+		List<FlightOwnerDTO> flightOwnerDto=new ArrayList();
+		for (FlightOwner flightOwner2 : flightOwner) {
+		    FlightOwnerDTO flightOwnerTemp=new FlightOwnerDTO();
+		    flightOwnerTemp.setFlightOwnerId(flightOwner2.getFlightOwnerId());
+		    flightOwnerTemp.setFlightOwnerName(flightOwner2.getFlightOwnerName());
+		    flightOwnerTemp.setFlightOwnerContact(flightOwner2.getFlightOwnerContact());
+		    flightOwnerTemp.setFlightOwnerEmail(flightOwner2.getFlightOwnerEmail());
+		    flightOwnerTemp.setFlightOwnerPassword(flightOwner2.getFlightOwnerPassword());
+		    flightOwnerDto.add(flightOwnerTemp);   
+		}
+		return flightOwnerDto;
 	}
 
 	

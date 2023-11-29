@@ -15,7 +15,7 @@ public class AdminDTO {
     @Size(min = 2, max = 50, message = "Admin name must be between 2 and 50 characters")
 	private String adminName;
     @NotBlank(message = "Admin password is required")
-    @Pattern(regexp ="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$")
+    //@Pattern(regexp ="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}$")
     private String adminPassword;
    
 	public AdminDTO() {

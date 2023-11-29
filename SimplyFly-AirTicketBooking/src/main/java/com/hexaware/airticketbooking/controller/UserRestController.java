@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -29,6 +30,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api/v1/user")
+@CrossOrigin(origins="http://localhost:4200/")
 public class UserRestController {
 	private IUserService userService;
 	Logger logger = LoggerFactory.getLogger(UserRestController.class);
@@ -38,7 +40,6 @@ public class UserRestController {
 		this.userService = userService;
 	}
 	@PostMapping("/adduser")
-	
 	public UserDTO registerUser(@RequestBody @Valid UserDTO userDto) {
         logger.info("Received request to register user ");
 return userService.registerUser(userDto);
@@ -59,7 +60,7 @@ return userService.registerUser(userDto);
 		return new ResponseEntity<>("USER deleted sucessfully", HttpStatus.ACCEPTED);
 	}
 	@GetMapping("/getuserbyid/{userId}")
-	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN')")
+	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN','ROLE_USER')")
 	public UserDTO getByUserId(@PathVariable int userId) {
         logger.info("Received request to get user details for userId: {}", userId);
         UserDTO user= userService.getByUserId(userId);

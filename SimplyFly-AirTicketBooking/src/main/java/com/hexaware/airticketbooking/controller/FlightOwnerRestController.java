@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -30,6 +31,7 @@ import jakarta.validation.Valid;
  */
 @RestController
 @RequestMapping("/api/v1/flightowner")
+@CrossOrigin("http://localhost:4200")
 public class FlightOwnerRestController {
 	
 	private IFlightOwnerService flightOwnerService;
@@ -78,9 +80,9 @@ public class FlightOwnerRestController {
 	
 	@GetMapping("/getallflightowner")
 	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN')")
-	public List<FlightOwner> viewAllFlightOwners(){
+	public List<FlightOwnerDTO> viewAllFlightOwners(){
         logger.info("Received request to get all flight owners");
-        List<FlightOwner> flighOwner= flightOwnerService.viewAllFlightOwners();
+        List<FlightOwnerDTO> flighOwner= flightOwnerService.viewAllFlightOwners();
 		if (flighOwner.isEmpty()) {
             logger.info("Zero flight owners found");
             throw new FlightOwnerNotFoundException(HttpStatus.NOT_FOUND, "zero flightOwners");

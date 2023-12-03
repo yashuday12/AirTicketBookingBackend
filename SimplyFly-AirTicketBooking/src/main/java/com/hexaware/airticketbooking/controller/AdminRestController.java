@@ -65,10 +65,10 @@ public class AdminRestController {
     // Get admin profile by adminId
 	@GetMapping("/getadminbyid/{adminId}")
 	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN')")
-	public Admin getAdminProfileById(@PathVariable int adminId) {
+	public AdminDTO getAdminProfileById(@PathVariable int adminId) {
         logger.info("Received request to get admin profile for adminId: {}", adminId);
 
-		Admin admin= adminService.getAdminProfileById(adminId);
+		AdminDTO admin= adminService.getAdminProfileById(adminId);
 		if(admin.getAdminId()!=adminId) {
             logger.info("Admin not found for adminId: {}", adminId);
             // Throw an AdminNotFoundException if the admin is not found

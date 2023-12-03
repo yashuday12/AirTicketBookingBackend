@@ -17,5 +17,7 @@ public interface IFlightService {
 	public List<FlightDTO> viewAllFlights() throws FlightNotFoundException;// All Flights can be displayed
 	public List<FlightDTO> searchFlight(String source, String destination) throws FlightNotFoundException;//user can search flightthat are travelling from one source to destination
 	
+	public List<FlightDTO> getFlightDetailsByFlightOwnerId(int flightOwnerId);
+	
 
 }

@@ -54,8 +54,8 @@ public class TicketServiceimp implements ITicketService {
 
   
 	@Override
-	public TicketDTO bookAirTicket(TicketPassengerVO ticketPassengerVo ,String userName,int flightId) {
-		 logger.info("Ticket Service Implementation - Inserting ticket for user: {} on flight ID: {}", userName, flightId);
+	public TicketDTO bookAirTicket(TicketPassengerVO ticketPassengerVo ,int userId,int flightId) {
+		 logger.info("Ticket Service Implementation - Inserting ticket for user: {} on flight ID: {}", userId, flightId);
 	    Flight flight=flightRepository.findById(flightId).orElse(new Flight());
 		 if(flight.getNumberOfSeats()!=0) {
 			 TicketDTO ticketDto = ticketPassengerVo.getTicketDto();
@@ -63,8 +63,8 @@ public class TicketServiceimp implements ITicketService {
 			 ticketDetails.setNumberOfPassengers(ticketDto.getNumberOfPassengers());
 			 ticketDetails.setEmail(ticketDto.getEmail());
 			 ticketDetails.setTravelDate(ticketDto.getTravelDate());
-			 ticketDetails.setTotalAmount(flight.getFare()*ticketDetails.getNumberOfPassengers());
-			 User user=userRepository.findByUserName(userName).orElse(new User());
+			 ticketDetails.setTotalAmount(ticketDto.getTotalAmount());
+			 User user=userRepository.findById(userId).orElse(new User());
 			 if(user.getWallet() <= ticketDetails.getTotalAmount()){
 					throw new InsufficientBalanceException(HttpStatus.BAD_REQUEST,"Your wallet doesn't have sufficient balance to book a ticket");
 				}

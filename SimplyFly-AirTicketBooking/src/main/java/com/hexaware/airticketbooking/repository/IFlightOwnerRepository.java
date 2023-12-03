@@ -20,4 +20,4 @@ public interface IFlightOwnerRepository extends JpaRepository<FlightOwner, Integ
 	@Query("select f.ROLES from FlightOwner f where f.flightOwnerName=:name")
 	public String getRoleByFlightOwnerName(@Param("name") String flightOwnerName);
 	
-}
+} 

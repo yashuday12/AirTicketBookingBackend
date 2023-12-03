@@ -77,5 +77,12 @@ public void setPassengerSeatNumber(String passengerSeatNumber) {
 }
 
 
+@Override
+public String toString() {
+	return "PassengerDTO [passenegerId=" + passenegerId + ", passengerName=" + passengerName + ", passengerAge="
+			+ passengerAge + ", passengerSeatNumber=" + passengerSeatNumber + "]";
+}
+
+
  
 }

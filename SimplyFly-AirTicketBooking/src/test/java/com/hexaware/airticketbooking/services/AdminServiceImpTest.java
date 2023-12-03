@@ -93,7 +93,7 @@ class AdminServiceImpTest {
 
         when(adminRepository.findById(adminId)).thenReturn(Optional.of(admin));
 
-        Admin result = adminService.getAdminProfileById(adminId);
+        AdminDTO result = adminService.getAdminProfileById(adminId);
 
         assertNotNull(result);
         assertEquals(admin.getAdminId(), result.getAdminId());

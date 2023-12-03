@@ -97,6 +97,13 @@ public class TicketDTO {
 	public void setNumberOfPassengers(int numberOfPassengers) {
 		this.numberOfPassengers = numberOfPassengers;
 	}
+
+
+	@Override
+	public String toString() {
+		return "TicketDTO [ticketId=" + ticketId + ", travelDate=" + travelDate + ", email=" + email + ", totalAmount="
+				+ totalAmount + ", numberOfPassengers=" + numberOfPassengers + "]";
+	}
 	
 	
 }	

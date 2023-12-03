@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -26,6 +27,7 @@ import com.hexaware.airticketbooking.services.ITicketService;
  */
 @RestController
 @RequestMapping("/api/v1/ticket")
+@CrossOrigin("http://localhost:4200")
 public class TicketRestController {
 
 	private ITicketService ticketService;
@@ -37,12 +39,12 @@ public class TicketRestController {
 		this.ticketService = ticketService;
 	}
 	
-	@PostMapping("/addticket/{userName}/{flightId}")
+	@PostMapping("/addticket/{userId}/{flightId}")
 	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
-	public TicketDTO bookAirTicket(@RequestBody TicketPassengerVO ticketPassengerVo ,@PathVariable String userName, @PathVariable int flightId) {
-        logger.info("Received request to book air ticket for userName: {} and flightId: {}", userName, flightId);
-
-		return ticketService.bookAirTicket(ticketPassengerVo, userName, flightId);
+	public TicketDTO bookAirTicket(@RequestBody TicketPassengerVO ticketPassengerVo ,@PathVariable int userId, @PathVariable int flightId) {
+        logger.info("Received request to book air ticket for userName: {} and flightId: {}", userId, flightId);
+        System.out.println(ticketPassengerVo);
+		return ticketService.bookAirTicket(ticketPassengerVo, userId, flightId);
 
 	}
 	

@@ -108,5 +108,26 @@ public class FlightServiceImp implements IFlightService {
 
 		return new FlightDTO(flight.getFlightId(),flight.getFlightName(),flight.getTypeOfFlight(),flight.getSource(),flight.getDestination(),flight.getTimeOfArrival(),flight.getTimeOfDeparture(),flight.getDuration(),flight.getFare(),flight.getNumberOfSeats());
 	}
+
+	@Override
+	public List<FlightDTO> getFlightDetailsByFlightOwnerId(int flightOwnerId) {
+		// TODO Auto-generated method stub
+		List<Flight> flights=flightRepository.getFlightsByFlightOwnerId(flightOwnerId);
+		List<FlightDTO> flightList=new ArrayList<FlightDTO>();
+		for (Flight flight : flights) {
+			FlightDTO flightDto=new FlightDTO();
+			flightDto.setFlightId(flight.getFlightId());
+			flightDto.setFlightName(flight.getFlightName());
+			flightDto.setSource(flight.getSource());
+			flightDto.setDestination(flight.getDestination());
+			flightDto.setTimeOfArrival(flight.getTimeOfArrival());
+			flightDto.setTimeOfDeparture(flight.getTimeOfDeparture());
+			flightDto.setTypeOfFlight(flight.getTypeOfFlight());
+			flightDto.setFare(flight.getFare());
+			flightList.add(flightDto);
+		}
+			
+		return flightList;
+	}
 	
 }

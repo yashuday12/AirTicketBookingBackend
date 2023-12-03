@@ -63,7 +63,7 @@ public class FlightRestController {
 	}
 	
 	@GetMapping("/Getflightbyid/{flightId}")
-	@PreAuthorize("hasAnyAuthority('ROLE_FLIGHTOWNER')")
+	@PreAuthorize("hasAnyAuthority('ROLE_FLIGHTOWNER','ROLE_USER')")
 	public FlightDTO getFlightById(@PathVariable int flightId) {
         logger.info("Received request to get flight details for flightId: {}", flightId);
         FlightDTO flightDto= flightService.getFlightById(flightId);
@@ -97,5 +97,13 @@ public class FlightRestController {
 	     }
 	     return flightDto;
 	}
+	@GetMapping("/getflightsbyflightownerid/{flightOwnerId}")
+	@PreAuthorize("hasAnyAuthority('ROLE_FLIGHTOWNER')")
+	public List<FlightDTO> getFlightDetailsByFlightOwnerId(@PathVariable int flightOwnerId){
+		
+		return flightService.getFlightDetailsByFlightOwnerId(flightOwnerId);
+	}
+	
+	
 	}
 

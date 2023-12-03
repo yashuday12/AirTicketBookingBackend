@@ -11,7 +11,7 @@ import com.hexaware.airticketbooking.exceptions.TicketNotFoundException;
  * Description: This is Service Interface of Ticket. Abstract methods are declared and they are implemented in service implementation classes. */
 
 public interface ITicketService {
-	public TicketDTO bookAirTicket(TicketPassengerVO ticketPassengerVo ,String userName,int flightId);//user can book a ticket and can add passenger details
+	public TicketDTO bookAirTicket(TicketPassengerVO ticketPassengerVo ,int userId,int flightId);//user can book a ticket and can add passenger details
 	public void cancelTicket(int ticketId);//user can cancel the ticket i.e user can delete the ticket
 	public TicketDTO fetchBookingDetailsByTicketId(int ticketId)throws TicketNotFoundException;// ticket details are fetched by using ticketid
 	public List<TicketDTO> veiwTicketDetails() throws TicketNotFoundException;// We can fetch all ticket details booked by all users

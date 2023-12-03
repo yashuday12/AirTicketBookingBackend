@@ -33,5 +33,10 @@ public class TicketPassengerVO {
 		this.passengerDto = passengerDto;
 	}
 
+	@Override
+	public String toString() {
+		return "TicketPassengerVO [ticketDto=" + ticketDto + ", passengerDto=" + passengerDto + "]";
+	}
+
 	
 }

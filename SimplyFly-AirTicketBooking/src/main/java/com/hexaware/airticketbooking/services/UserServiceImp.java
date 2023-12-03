@@ -103,11 +103,18 @@ public class UserServiceImp implements IUserService {
 		 logger.info("Entering getByUserId method with userId: {}", userId);
 
 		User user=userRepository.findById(userId).orElse(new User());
+		UserDTO userDto=new UserDTO();
+		userDto.setUserId(user.getUserId());
+		userDto.setUserName(user.getUserName());
+		userDto.setGender(user.getGender());
+		userDto.setContactNumber(user.getContactNumber());
+		userDto.setAddress(user.getAddress());
+		userDto.setDateOfBirth(user.getDateOfBirth());
+		userDto.setUserEmail(user.getUserEmail());
 		 logger.info("User Service Implementation - User fetched successfully. User ID: {}", user.getUserId());
-	        logger.info("Exiting getByUserId method with userId: {}", userId);
-
-		return new UserDTO(user.getUserId(),user.getUserName(),user.getGender(),user.getContactNumber(),user.getAddress(),user.getDateOfBirth(),user.getUserEmail(),user.getPassword(),user.getWallet());
-
+	     logger.info("Exiting getByUserId method with userId: {}", userId);
+        return userDto;
+		
 	}
 
 	@Override

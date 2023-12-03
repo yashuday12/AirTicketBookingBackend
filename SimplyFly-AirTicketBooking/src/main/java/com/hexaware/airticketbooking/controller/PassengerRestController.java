@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,6 +25,7 @@ import com.hexaware.airticketbooking.services.IPassengerService;
  */
 @RestController
 @RequestMapping("/api/v1/passenger")
+@CrossOrigin("http://localhost:4200/")
 public class PassengerRestController {
 	
 	private IPassengerService passengerService;
@@ -71,7 +73,7 @@ public class PassengerRestController {
 	}
 	
 	@GetMapping("/getpassengersbyticketId/{ticketId}")
-	@PreAuthorize("hasAnyAuthority('ROLE_FLIGHTOWNER')")
+	@PreAuthorize("hasAnyAuthority('ROLE_FLIGHTOWNER','ROLE_USER')")
 	public List<PassengerDTO> getPassengerByTicketId(@PathVariable int ticketId) {
         logger.info("Received request to get passengers by ticketId: {}", ticketId);
 

@@ -70,7 +70,12 @@ public class FlightownerServiceImp implements IFlightOwnerService {
 		
 		FlightOwner flightOwner=flightOwnerRepository.findById(flightOwnerId).orElse(new FlightOwner());
         logger.info("Flight Owner Service Implementation - Fetching Flight Owner with ID :{}", flightOwnerId);
-		return new FlightOwnerDTO(flightOwner.getFlightOwnerId(),flightOwner.getFlightOwnerName(),flightOwner.getFlightOwnerPassword(),flightOwner.getFlightOwnerContact(),flightOwner.getFlightOwnerEmail()) ;
+		FlightOwnerDTO flightOwnerDto=new FlightOwnerDTO();
+		flightOwnerDto.setFlightOwnerId(flightOwner.getFlightOwnerId());
+		flightOwnerDto.setFlightOwnerName(flightOwner.getFlightOwnerName());
+		flightOwnerDto.setFlightOwnerEmail(flightOwner.getFlightOwnerEmail());
+		flightOwnerDto.setFlightOwnerContact(flightOwner.getFlightOwnerContact());
+		return flightOwnerDto;
 	}
 
 	@Override

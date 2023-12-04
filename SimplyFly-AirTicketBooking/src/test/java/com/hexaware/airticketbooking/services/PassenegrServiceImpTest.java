@@ -56,7 +56,7 @@ class PassenegrServiceImpTest {
         when(passengerRepository.findById(passengerId)).thenReturn(Optional.of(passenger));
         PassengerDTO result = passengerService.getByPassengerId(passengerId);
         assertNotNull(result);
-        assertEquals(passengerId, result.getPassenegerId());
+        assertEquals(passengerId, result.getPassengerId());
     }
 
     @Test

@@ -164,7 +164,7 @@ class UserServiceImpTest {
 	        when(userRepository.save(any(User.class))).thenReturn(user);
 
 	        
-	        long result = userService.rechargeWallet(userId, amount);
+	        UserDTO result = userService.rechargeWallet(userId, amount);
 
 	        
 	        assertEquals(user.getWallet() + amount, result);

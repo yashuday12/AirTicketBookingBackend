@@ -22,6 +22,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.hexaware.airticketbooking.dto.UpdateUserDTO;
 import com.hexaware.airticketbooking.dto.UserDTO;
 import com.hexaware.airticketbooking.exceptions.UserNotFoundException;
 import com.hexaware.airticketbooking.services.IUserService;
@@ -45,11 +46,11 @@ public class UserRestController {
 return userService.registerUser(userDto);
 		
 	}
-	@PutMapping("/updateuser")
+	@PutMapping("/updateuser/{userId}")
 	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
-	public UserDTO editUserProfile(@RequestBody @Valid UserDTO userDto) {
-        logger.info("Received request to update user profile for userId: {}", userDto.getUserId());
-        return userService.editUserProfile(userDto);
+	public UpdateUserDTO editUserProfile(@RequestBody @Valid UpdateUserDTO userDto,@PathVariable int userId) {
+		logger.info("Received request to Edit user profile for userId: {}", userId);
+		return userService.editUserProfile(userDto,userId);
 		
 	}
 	@DeleteMapping("/deleteuserbyid/{userId}")
@@ -88,10 +89,10 @@ return userService.registerUser(userDto);
         return userService.changePassword(userId, password) ;
 		
 	}
-	@PutMapping("/rechargewallet")
+	@PutMapping("/rechargewallet/{userId}/{amount}")
 	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
-	public ResponseEntity<String> rechargeWallet(int userId,long amount) {
-		return new ResponseEntity<>("Your Current  wallet has :"+userService.rechargeWallet(userId, amount),HttpStatus.ACCEPTED);
+	public UserDTO rechargeWallet(@PathVariable int userId, @PathVariable long amount) {
+		return userService.rechargeWallet(userId, amount);
 		
 	}
 	

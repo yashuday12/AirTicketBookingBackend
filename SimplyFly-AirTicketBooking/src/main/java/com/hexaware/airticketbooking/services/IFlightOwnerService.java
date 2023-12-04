@@ -3,8 +3,10 @@ package com.hexaware.airticketbooking.services;
 import java.util.List;
 
 import com.hexaware.airticketbooking.dto.FlightOwnerDTO;
-import com.hexaware.airticketbooking.entities.FlightOwner;
+import com.hexaware.airticketbooking.dto.UpdateFlightOwnerDTO;
 import com.hexaware.airticketbooking.exceptions.FlightOwnerNotFoundException;
+
+import jakarta.validation.Valid;
 
 /*
  * Author: Yashwanth
@@ -13,7 +15,7 @@ import com.hexaware.airticketbooking.exceptions.FlightOwnerNotFoundException;
 
 public interface IFlightOwnerService {
 	public FlightOwnerDTO addFlightOwner(FlightOwnerDTO flightOwnerDto);// Using this method we can add flightowner details
-	public FlightOwnerDTO editFlightOwnerProfile(FlightOwnerDTO flightOwnerDto);//This method will help us in editing flightowner details
+	public UpdateFlightOwnerDTO editFlightOwnerProfile(UpdateFlightOwnerDTO flightOwnerDto,int flightOwnerId);//This method will help us in editing flightowner details
 	public void deleteFlightOwner(int flightOwnerId );// Flight Owner can be deleted
 	public FlightOwnerDTO getFlightOwnerDetailsById(int flightOwnerId)throws FlightOwnerNotFoundException;//we can fetch flightowner details by using id;
 	public List<FlightOwnerDTO> viewAllFlightOwners() throws FlightOwnerNotFoundException;//It is used to fetch and display all flightowners

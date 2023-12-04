@@ -65,16 +65,12 @@ public class TicketServiceimp implements ITicketService {
 			 ticketDetails.setTravelDate(ticketDto.getTravelDate());
 			 ticketDetails.setTotalAmount(ticketDto.getTotalAmount());
 			 User user=userRepository.findById(userId).orElse(new User());
-			 if(user.getWallet() <= ticketDetails.getTotalAmount()){
+			 if(user.getWallet() < ticketDetails.getTotalAmount()){
 					throw new InsufficientBalanceException(HttpStatus.BAD_REQUEST,"Your wallet doesn't have sufficient balance to book a ticket");
 				}
 			 long remainingwallet=(long) (user.getWallet()-ticketDetails.getTotalAmount());
 			 user.setWallet(remainingwallet);
 			 userRepository.save(user);
-			 
-			 int remaingSeats=flight.getNumberOfSeats()-ticketDetails.getNumberOfPassengers();
-			 flight.setNumberOfSeats(remaingSeats);
-			 flightRepository.save(flight);
 			 ticketDetails.setUser(user);
 			 ticketDetails.setFlight(flight);
 			

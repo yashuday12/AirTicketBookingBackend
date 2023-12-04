@@ -3,13 +3,13 @@ package com.hexaware.airticketbooking.services;
 import java.util.ArrayList;
 import java.util.List;
 
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.hexaware.airticketbooking.dto.FlightOwnerDTO;
+import com.hexaware.airticketbooking.dto.UpdateFlightOwnerDTO;
 import com.hexaware.airticketbooking.entities.FlightOwner;
 import com.hexaware.airticketbooking.exceptions.FlightOwnerNotFoundException;
 import com.hexaware.airticketbooking.repository.IFlightOwnerRepository;
@@ -46,17 +46,15 @@ public class FlightownerServiceImp implements IFlightOwnerService {
 	}
 
 	@Override
-	public FlightOwnerDTO editFlightOwnerProfile(FlightOwnerDTO flightOwnerDto) {
-		FlightOwner flightOwner=new FlightOwner();
+	public UpdateFlightOwnerDTO editFlightOwnerProfile(UpdateFlightOwnerDTO flightOwnerDto,int flightOwnerId) {
+		FlightOwner flightOwner=flightOwnerRepository.findById(flightOwnerId).orElse(new FlightOwner());
 		flightOwner.setFlightOwnerId(flightOwnerDto.getFlightOwnerId());
-		flightOwner.setFlightOwnerPassword(passwordEncoder.encode(flightOwnerDto.getFlightOwnerPassword()));
 		flightOwner.setFlightOwnerName(flightOwnerDto.getFlightOwnerName());
 		flightOwner.setFlightOwnerContact(flightOwnerDto.getFlightOwnerContact());
 		flightOwner.setFlightOwnerEmail(flightOwnerDto.getFlightOwnerEmail());
-		
 		FlightOwner flightOwnerTemp=flightOwnerRepository.save(flightOwner);
         logger.info("Flight Owner Service Implementation - Updated the Flight Owner data in the existing record in the database successfully");
-        return new FlightOwnerDTO(flightOwnerTemp.getFlightOwnerId(),flightOwnerTemp.getFlightOwnerPassword(),flightOwnerTemp.getFlightOwnerName(),flightOwnerTemp.getFlightOwnerContact(),flightOwnerTemp.getFlightOwnerEmail());
+        return new UpdateFlightOwnerDTO(flightOwnerTemp.getFlightOwnerId(),flightOwnerTemp.getFlightOwnerName(),flightOwnerTemp.getFlightOwnerContact(),flightOwnerTemp.getFlightOwnerEmail());
 	}
 
 	@Override

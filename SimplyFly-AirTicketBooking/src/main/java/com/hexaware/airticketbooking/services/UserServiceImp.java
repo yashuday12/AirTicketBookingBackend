@@ -10,9 +10,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.hexaware.airticketbooking.config.AdminInfoUserDetails;
-import com.hexaware.airticketbooking.config.FlightOwnerInfoUserDetails;
-import com.hexaware.airticketbooking.config.UserInfoUserDetails;
+import com.hexaware.airticketbooking.dto.UpdateUserDTO;
 import com.hexaware.airticketbooking.dto.UserDTO;
 import com.hexaware.airticketbooking.entities.Admin;
 import com.hexaware.airticketbooking.entities.FlightOwner;
@@ -66,10 +64,10 @@ public class UserServiceImp implements IUserService {
 	}
 
 	@Override
-	public UserDTO editUserProfile(UserDTO userDto) {
+	public UpdateUserDTO editUserProfile(UpdateUserDTO userDto,int userId) {
 		 logger.info("Entering updateUser method with userDto: {}", userDto);
 
-		User user=new User();
+		User user=userRepository.findById(userId).orElse(new User());
 		user.setUserId(userDto.getUserId());
 		user.setUserName(userDto.getUserName());
 		user.setGender(userDto.getGender());
@@ -77,14 +75,11 @@ public class UserServiceImp implements IUserService {
 		user.setAddress(userDto.getAddress());
 		user.setDateOfBirth(userDto.getDateOfBirth());
 		user.setUserEmail(userDto.getUserEmail());
-		user.setPassword(passwordEncoder.encode(userDto.getPassword()));
-	
-		user.setWallet(userDto.getWallet());
 		User user1=userRepository.save(user);
 		logger.info("User Service Implementation - User updated successfully. User ID: {}", user.getUserId());
         logger.info("Exiting updateUser method with userDto: {}", userDto);
 
-		return new UserDTO(user1.getUserId(),user1.getUserName(),user1.getGender(),user1.getContactNumber(),user1.getAddress(),user1.getDateOfBirth(),user1.getUserEmail(),user1.getPassword(),user1.getWallet());
+		return new UpdateUserDTO(user1.getUserId(),user1.getUserName(),user1.getGender(),user1.getContactNumber(),user1.getAddress(),user1.getDateOfBirth(),user1.getUserEmail());
 	}
 
 	@Override
@@ -111,6 +106,7 @@ public class UserServiceImp implements IUserService {
 		userDto.setAddress(user.getAddress());
 		userDto.setDateOfBirth(user.getDateOfBirth());
 		userDto.setUserEmail(user.getUserEmail());
+		userDto.setWallet(user.getWallet());
 		 logger.info("User Service Implementation - User fetched successfully. User ID: {}", user.getUserId());
 	     logger.info("Exiting getByUserId method with userId: {}", userId);
         return userDto;
@@ -163,11 +159,12 @@ public class UserServiceImp implements IUserService {
 	}
 
 	@Override
-	public long rechargeWallet(int userId, long amount) {
+	public UserDTO rechargeWallet(int userId, long amount) {
 		User user=userRepository.findById(userId).orElse(new User());
 		user.setWallet(user.getWallet()+amount);
 		User updatedUser=userRepository.save(user);
-		return updatedUser.getWallet();
+
+		return new UserDTO(updatedUser.getUserId(),updatedUser.getUserName(),updatedUser.getGender(),updatedUser.getContactNumber(),updatedUser.getAddress(),updatedUser.getDateOfBirth(),updatedUser.getUserEmail(),updatedUser.getPassword(),updatedUser.getWallet());
 	}
 
 	@Override

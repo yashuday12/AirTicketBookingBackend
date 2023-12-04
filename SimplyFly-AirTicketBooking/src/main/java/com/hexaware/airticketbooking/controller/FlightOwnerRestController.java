@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.hexaware.airticketbooking.dto.FlightOwnerDTO;
-import com.hexaware.airticketbooking.entities.FlightOwner;
+import com.hexaware.airticketbooking.dto.UpdateFlightOwnerDTO;
 import com.hexaware.airticketbooking.exceptions.FlightNotFoundException;
 import com.hexaware.airticketbooking.exceptions.FlightOwnerNotFoundException;
 import com.hexaware.airticketbooking.services.IFlightOwnerService;
@@ -50,11 +50,11 @@ public class FlightOwnerRestController {
 		
 	}
 
-	@PutMapping("/updateflightowner")
+	@PutMapping("/updateflightowner/{flightOwnerId}")
 	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN','ROLE_FLIGHTOWNER')")
-	public FlightOwnerDTO editFlightOwnerProfile(@RequestBody @Valid FlightOwnerDTO flightOwnerDto) {
+	public UpdateFlightOwnerDTO editFlightOwnerProfile(@RequestBody @Valid UpdateFlightOwnerDTO flightOwnerDto,@PathVariable int flightOwnerId) {
         logger.info("Received request to update flight owner profile for flightOwnerId: {}", flightOwnerDto.getFlightOwnerId());
-        return flightOwnerService.editFlightOwnerProfile(flightOwnerDto);
+        return flightOwnerService.editFlightOwnerProfile(flightOwnerDto,flightOwnerId);
 		
 	}
 	

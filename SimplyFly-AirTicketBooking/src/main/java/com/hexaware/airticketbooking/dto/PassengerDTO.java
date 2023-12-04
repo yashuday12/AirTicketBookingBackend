@@ -13,7 +13,7 @@ import jakarta.validation.constraints.Size;
 public class PassengerDTO {
 
 
-	private int passenegerId;
+	private int passengerId;
 	@NotBlank(message = "Passenger name is required")
 	@Size(min = 2, max = 50, message = "Passenger name must be between 2 and 50 characters")
  	private String passengerName;
@@ -28,22 +28,22 @@ public PassengerDTO() {
 }
 
 
-public PassengerDTO(int passenegerId, String passengerName, int passengerAge, String passengerSeatNumber) {
+public PassengerDTO(int passengerId, String passengerName, int passengerAge, String passengerSeatNumber) {
 	super();
-	this.passenegerId = passenegerId;
+	this.passengerId = passengerId;
 	this.passengerName = passengerName;
 	this.passengerAge = passengerAge;
 	this.passengerSeatNumber = passengerSeatNumber;
 }
 
 
-public int getPassenegerId() {
-	return passenegerId;
+public int getPassengerId() {
+	return passengerId;
 }
 
 
-public void setPassenegerId(int passenegerId) {
-	this.passenegerId = passenegerId;
+public void setPassengerId(int passengerId) {
+	this.passengerId = passengerId;
 }
 
 
@@ -79,7 +79,7 @@ public void setPassengerSeatNumber(String passengerSeatNumber) {
 
 @Override
 public String toString() {
-	return "PassengerDTO [passenegerId=" + passenegerId + ", passengerName=" + passengerName + ", passengerAge="
+	return "PassengerDTO [passenegerId=" + passengerId + ", passengerName=" + passengerName + ", passengerAge="
 			+ passengerAge + ", passengerSeatNumber=" + passengerSeatNumber + "]";
 }
 

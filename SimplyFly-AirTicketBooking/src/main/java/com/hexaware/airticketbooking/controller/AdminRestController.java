@@ -20,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.hexaware.airticketbooking.dto.AdminDTO;
+import com.hexaware.airticketbooking.dto.UpdateAdminDTO;
 import com.hexaware.airticketbooking.entities.Admin;
 import com.hexaware.airticketbooking.exceptions.AdminNotFoundException;
 import com.hexaware.airticketbooking.services.IAdminService;
@@ -48,11 +49,11 @@ public class AdminRestController {
 		return adminService.addAdmin(adminDto);
 	}
     // Update admin profile
-	@PutMapping("/updateadmin")
+	@PutMapping("/updateadmin/{adminId}")
 	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN')")
-	public AdminDTO editAdminProfile(@RequestBody @Valid AdminDTO adminDto) {
+	public UpdateAdminDTO editAdminProfile(@RequestBody @Valid UpdateAdminDTO adminDto,@PathVariable int adminId) {
         logger.info("Received request to update admin profile for adminId: {}", adminDto.getAdminId());
-        return adminService.editAdminProfile(adminDto);
+        return adminService.editAdminProfile(adminDto,adminId);
 	}
     // Delete an admin account
 	@DeleteMapping("/deleteadmin/{adminId}")

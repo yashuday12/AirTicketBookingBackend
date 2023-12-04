@@ -53,7 +53,7 @@ public class PassengerRestController {
         logger.info("Received request to get passenger details for passengerId: {}", passengerId);
 
 		PassengerDTO passengerDto= passengerService.getByPassengerId(passengerId);
-		if(passengerDto.getPassenegerId()!=passengerId) {
+		if(passengerDto.getPassengerId()!=passengerId) {
             logger.warn("No passenger details found for passengerId: {}", passengerId);
             throw new PassengerNotFoundException(HttpStatus.NOT_FOUND,"No Passenger details found with passengerId:"+passengerId);
 		}
@@ -86,7 +86,6 @@ public class PassengerRestController {
 	}
 	
 	@GetMapping("/fetchbookedseats/{travelDate}/{flightId}")
-	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
 
 	public List<String> fetchBookedSeats(@PathVariable String travelDate, @PathVariable int flightId) {
         logger.info("Received request to fetch booked seats for travelDate: {} and flightId: {}", travelDate, flightId);

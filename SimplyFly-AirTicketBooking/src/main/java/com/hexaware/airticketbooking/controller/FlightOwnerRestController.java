@@ -68,9 +68,9 @@ public class FlightOwnerRestController {
 	
 	@GetMapping("/getflightownerbyid/{flightOwnerId}")
 	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN')")
-	public FlightOwnerDTO getFlightOwnerDetailsById(@PathVariable int flightOwnerId) {
+	public UpdateFlightOwnerDTO getFlightOwnerDetailsById(@PathVariable int flightOwnerId) {
         logger.info("Received request to get flight owner details for flightOwnerId: {}", flightOwnerId);
-        FlightOwnerDTO flighOwner= flightOwnerService.getFlightOwnerDetailsById(flightOwnerId);
+        UpdateFlightOwnerDTO flighOwner= flightOwnerService.getFlightOwnerDetailsById(flightOwnerId);
 		if (flighOwner.getFlightOwnerId()!=flightOwnerId) {
             logger.info("Flight owner not found for flightOwnerId: {}", flightOwnerId);
             throw new FlightNotFoundException(HttpStatus.NOT_FOUND, "flightOwnerId with flightOwnerId :"+flightOwnerId+"not found");

@@ -21,6 +21,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import com.hexaware.airticketbooking.dto.FlightOwnerDTO;
+import com.hexaware.airticketbooking.dto.UpdateFlightOwnerDTO;
 import com.hexaware.airticketbooking.entities.FlightOwner;
 import com.hexaware.airticketbooking.exceptions.FlightOwnerNotFoundException;
 import com.hexaware.airticketbooking.repository.IFlightOwnerRepository;
@@ -65,24 +66,21 @@ class FlightownerServiceImpTest {
 
 	    @Test
 	    void testEditFlightOwnerProfile() {
-	    	 FlightOwnerDTO flightOwnerDto = new FlightOwnerDTO();
+	    	 UpdateFlightOwnerDTO flightOwnerDto = new UpdateFlightOwnerDTO();
 	    	 flightOwnerDto.setFlightOwnerId(1);
 	         FlightOwner flightOwner = new FlightOwner();
 	         flightOwner.setFlightOwnerId(flightOwnerDto.getFlightOwnerId());
 	         flightOwner.setFlightOwnerName(flightOwnerDto.getFlightOwnerName());
-	         flightOwner.setFlightOwnerPassword("encodedPassword");
 	         flightOwner.setFlightOwnerContact(flightOwnerDto.getFlightOwnerContact());
 	         flightOwner.setFlightOwnerEmail(flightOwnerDto.getFlightOwnerEmail());
 
-	         when(passwordEncoder.encode(flightOwnerDto.getFlightOwnerPassword())).thenReturn("encodedPassword");
 	         when(flightOwnerRepository.save(any())).thenReturn(flightOwner);
 
-	         FlightOwnerDTO result = flightownerService.editFlightOwnerProfile(flightOwnerDto);
+	         UpdateFlightOwnerDTO result = flightownerService.editFlightOwnerProfile(flightOwnerDto,1);
 
 	         assertNotNull(result);
 	         assertEquals(flightOwner.getFlightOwnerId(), result.getFlightOwnerId());
 	         assertEquals(flightOwner.getFlightOwnerName(), result.getFlightOwnerName());
-	         assertEquals(flightOwner.getFlightOwnerPassword(), result.getFlightOwnerPassword());
 	         assertEquals(flightOwner.getFlightOwnerContact(), result.getFlightOwnerContact());
 	         assertEquals(flightOwner.getFlightOwnerEmail(), result.getFlightOwnerEmail());
 	    }
@@ -101,20 +99,18 @@ class FlightownerServiceImpTest {
 	         FlightOwner flightOwner = new FlightOwner();
 	          flightOwner.setFlightOwnerId(flightOwnerId);
 	         flightOwner.setFlightOwnerName("owner1");
-	         flightOwner.setFlightOwnerPassword("encodedPassword");
 	         flightOwner.setFlightOwnerContact("contact");
 	         flightOwner.setFlightOwnerEmail("email");
 
 	         when(flightOwnerRepository.findById(flightOwnerId)).thenReturn(Optional.of(flightOwner));
 
 	        
-	         FlightOwnerDTO result = flightownerService.getFlightOwnerDetailsById(flightOwnerId);
+	         UpdateFlightOwnerDTO result = flightownerService.getFlightOwnerDetailsById(flightOwnerId);
 
 	        
 	         assertNotNull(result);
 	         assertEquals(flightOwner.getFlightOwnerId(), result.getFlightOwnerId());
 	         assertEquals(flightOwner.getFlightOwnerName(), result.getFlightOwnerName());
-	         assertEquals(flightOwner.getFlightOwnerPassword(), result.getFlightOwnerPassword());
 	         assertEquals(flightOwner.getFlightOwnerContact(), result.getFlightOwnerContact());
 	         assertEquals(flightOwner.getFlightOwnerEmail(), result.getFlightOwnerEmail());
 

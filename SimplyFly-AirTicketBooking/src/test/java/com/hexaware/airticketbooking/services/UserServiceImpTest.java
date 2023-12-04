@@ -20,6 +20,7 @@ import org.mockito.MockitoAnnotations;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import com.hexaware.airticketbooking.dto.UpdateUserDTO;
 import com.hexaware.airticketbooking.dto.UserDTO;
 import com.hexaware.airticketbooking.entities.User;
 import com.hexaware.airticketbooking.exceptions.UserNotFoundException;
@@ -67,13 +68,12 @@ class UserServiceImpTest {
 	    @Test
 	    void testEditUserProfile() {
 	        
-	        UserDTO userDto = createUserDTO();
+	        UpdateUserDTO userDto = new UpdateUserDTO();
 	        User user = createUser();
 	        when(userRepository.save(any(User.class))).thenReturn(user);
-	        when(passwordEncoder.encode(anyString())).thenReturn("encodedPassword");
-
+	      
 	        
-	        UserDTO result = userService.editUserProfile(userDto);
+	        UpdateUserDTO result = userService.editUserProfile(userDto,1);
 
 	        assertNotNull(result);
 	        assertEquals(user.getUserId(), result.getUserId());

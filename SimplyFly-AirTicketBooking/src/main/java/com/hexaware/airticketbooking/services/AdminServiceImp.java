@@ -58,10 +58,10 @@ public class AdminServiceImp implements IAdminService {
 	}
 
 	@Override
-	public AdminDTO getAdminProfileById(int adminId) throws AdminNotFoundException {
+	public UpdateAdminDTO getAdminProfileById(int adminId) throws AdminNotFoundException {
 		logger.info("Admin Service Implementation-Fetching admin with ID :{}",adminId);
 		Admin admin= adminRepository.findById(adminId).orElse(new Admin());
-		AdminDTO adminDTO=new AdminDTO();
+		UpdateAdminDTO adminDTO=new UpdateAdminDTO();
 		adminDTO.setAdminId(admin.getAdminId());
 		adminDTO.setAdminName(admin.getAdminName());
 		return adminDTO;

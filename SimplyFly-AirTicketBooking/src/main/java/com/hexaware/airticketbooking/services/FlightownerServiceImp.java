@@ -64,11 +64,11 @@ public class FlightownerServiceImp implements IFlightOwnerService {
 	}
 
 	@Override
-	public FlightOwnerDTO getFlightOwnerDetailsById(int flightOwnerId)throws FlightOwnerNotFoundException  {
+	public UpdateFlightOwnerDTO getFlightOwnerDetailsById(int flightOwnerId)throws FlightOwnerNotFoundException  {
 		
 		FlightOwner flightOwner=flightOwnerRepository.findById(flightOwnerId).orElse(new FlightOwner());
         logger.info("Flight Owner Service Implementation - Fetching Flight Owner with ID :{}", flightOwnerId);
-		FlightOwnerDTO flightOwnerDto=new FlightOwnerDTO();
+		UpdateFlightOwnerDTO flightOwnerDto=new UpdateFlightOwnerDTO();
 		flightOwnerDto.setFlightOwnerId(flightOwner.getFlightOwnerId());
 		flightOwnerDto.setFlightOwnerName(flightOwner.getFlightOwnerName());
 		flightOwnerDto.setFlightOwnerEmail(flightOwner.getFlightOwnerEmail());

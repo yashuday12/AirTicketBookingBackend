@@ -15,6 +15,6 @@ public interface IAdminService {
 	public AdminDTO addAdmin(AdminDTO adminDto);// It is used to register  Admin details.
 	public UpdateAdminDTO editAdminProfile(UpdateAdminDTO adminDto,int adminId);// This method can be used to edit Admin details.
 	public void deleteAdminAccount(int adminId);// It is used to delete admin
-	public AdminDTO getAdminProfileById(int adminId)throws AdminNotFoundException;// It can be used to edit admin detils
+	public UpdateAdminDTO getAdminProfileById(int adminId)throws AdminNotFoundException;// It can be used to edit admin detils
 	public List<Admin> viewAllAdmin() throws AdminNotFoundException;//It is used to display all admin details
 }

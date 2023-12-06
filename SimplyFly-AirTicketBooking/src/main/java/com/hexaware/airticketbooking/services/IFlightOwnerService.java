@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.hexaware.airticketbooking.dto.FlightOwnerDTO;
 import com.hexaware.airticketbooking.dto.UpdateFlightOwnerDTO;
+import com.hexaware.airticketbooking.dto.UserDTO;
 import com.hexaware.airticketbooking.exceptions.FlightOwnerNotFoundException;
 
 import jakarta.validation.Valid;
@@ -19,6 +20,6 @@ public interface IFlightOwnerService {
 	public void deleteFlightOwner(int flightOwnerId );// Flight Owner can be deleted
 	public UpdateFlightOwnerDTO getFlightOwnerDetailsById(int flightOwnerId)throws FlightOwnerNotFoundException;//we can fetch flightowner details by using id;
 	public List<FlightOwnerDTO> viewAllFlightOwners() throws FlightOwnerNotFoundException;//It is used to fetch and display all flightowners
-	
-
+	 public boolean verifyownerpassword(String password,int flightOwnerId);
+	 public FlightOwnerDTO changeOwnerPassword(int flightOwnerId, String password);
 }

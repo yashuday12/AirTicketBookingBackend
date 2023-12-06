@@ -49,7 +49,7 @@ public class TicketRestController {
 	}
 	
 	@DeleteMapping("/deleteticket/{ticketId}")
-	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
+	@PreAuthorize("hasAnyAuthority('ROLE_USER','ROLE_FLIGHTOWNER','ROLE_ADMIN')")
 	public ResponseEntity<String> cancelTicket(@PathVariable int ticketId) {
         logger.info("Received request to cancel ticket for ticketId: {}", ticketId);
 

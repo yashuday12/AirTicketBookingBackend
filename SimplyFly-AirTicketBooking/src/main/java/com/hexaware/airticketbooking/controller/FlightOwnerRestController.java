@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.hexaware.airticketbooking.dto.AdminDTO;
 import com.hexaware.airticketbooking.dto.FlightOwnerDTO;
 import com.hexaware.airticketbooking.dto.UpdateFlightOwnerDTO;
 import com.hexaware.airticketbooking.exceptions.FlightNotFoundException;
@@ -67,7 +68,7 @@ public class FlightOwnerRestController {
 	}
 	
 	@GetMapping("/getflightownerbyid/{flightOwnerId}")
-	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN')")
+	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN','ROLE_FLIGHTOWNER')")
 	public UpdateFlightOwnerDTO getFlightOwnerDetailsById(@PathVariable int flightOwnerId) {
         logger.info("Received request to get flight owner details for flightOwnerId: {}", flightOwnerId);
         UpdateFlightOwnerDTO flighOwner= flightOwnerService.getFlightOwnerDetailsById(flightOwnerId);
@@ -89,6 +90,15 @@ public class FlightOwnerRestController {
 		}
 		return flighOwner;
 	}
-	
-	
+	@GetMapping("/verifyownerpassword/{flightOwnerId}/{password}")
+	@PreAuthorize("hasAnyAuthority('ROLE_FLIGHTOWNER')")
+	public boolean verifyFlightOwnerPassword(@PathVariable int flightOwnerId, @PathVariable String password) {
+		return flightOwnerService.verifyownerpassword(password, flightOwnerId);
+	}
+	@PutMapping("/changeownerpassword/{flightOwnerId}/{password}")
+	@PreAuthorize("hasAnyAuthority('ROLE_FLIGHTOWNER')")
+	public FlightOwnerDTO changeUserPassword(@PathVariable int flightOwnerId,@PathVariable String password) {
+        logger.info("Received request to change password for flightOwnerId: {}", flightOwnerId);
+        return flightOwnerService.changeOwnerPassword(flightOwnerId, password);	
+	}
 }

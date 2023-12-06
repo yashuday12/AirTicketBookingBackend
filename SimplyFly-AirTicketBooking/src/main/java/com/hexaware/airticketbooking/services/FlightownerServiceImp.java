@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 import com.hexaware.airticketbooking.dto.FlightOwnerDTO;
 import com.hexaware.airticketbooking.dto.UpdateFlightOwnerDTO;
 import com.hexaware.airticketbooking.entities.FlightOwner;
+import com.hexaware.airticketbooking.entities.User;
 import com.hexaware.airticketbooking.exceptions.FlightOwnerNotFoundException;
 import com.hexaware.airticketbooking.repository.IFlightOwnerRepository;
 /*
@@ -93,6 +94,33 @@ public class FlightownerServiceImp implements IFlightOwnerService {
 		return flightOwnerDto;
 	}
 
-	
+	@Override
+	public boolean verifyownerpassword(String password, int flightOwnerId) {
+		FlightOwner flightOwner=flightOwnerRepository.findById(flightOwnerId).orElse(new FlightOwner());
+		boolean flag=false;
+		if(passwordEncoder.matches(password, flightOwner.getFlightOwnerPassword())) {
+		  flag=true;
+	    }
+	    else {
+	    	flag=false;
+	    }
+		return flag;
+	   }
+
+	@Override
+	public FlightOwnerDTO changeOwnerPassword(int flightOwnerId, String password) {
+		FlightOwner flightOwnerTemp=flightOwnerRepository.findById(flightOwnerId).orElse(new FlightOwner());
+		 
+		flightOwnerTemp.setFlightOwnerPassword(passwordEncoder.encode(password));
+		FlightOwner flightOwner =flightOwnerRepository.save(flightOwnerTemp);
+		FlightOwnerDTO flightOwnerDto=new FlightOwnerDTO();
+		flightOwnerDto.setFlightOwnerId(flightOwner.getFlightOwnerId());
+		flightOwnerDto.setFlightOwnerName(flightOwner.getFlightOwnerName());
+		flightOwnerDto.setFlightOwnerEmail(flightOwner.getFlightOwnerEmail());
+		flightOwnerDto.setFlightOwnerContact(flightOwner.getFlightOwnerContact());
+		return flightOwnerDto;
+	}
 
 }
+
+

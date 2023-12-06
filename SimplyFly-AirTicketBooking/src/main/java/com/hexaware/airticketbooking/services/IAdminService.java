@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.hexaware.airticketbooking.dto.AdminDTO;
 import com.hexaware.airticketbooking.dto.UpdateAdminDTO;
+import com.hexaware.airticketbooking.dto.UserDTO;
 import com.hexaware.airticketbooking.entities.Admin;
 import com.hexaware.airticketbooking.exceptions.AdminNotFoundException;
 /*
@@ -17,4 +18,6 @@ public interface IAdminService {
 	public void deleteAdminAccount(int adminId);// It is used to delete admin
 	public UpdateAdminDTO getAdminProfileById(int adminId)throws AdminNotFoundException;// It can be used to edit admin detils
 	public List<Admin> viewAllAdmin() throws AdminNotFoundException;//It is used to display all admin details
+	 public boolean verifyadminpassword(String password,int adminId);
+	 public AdminDTO changeAdminPassword(int adminId, String password);
 }

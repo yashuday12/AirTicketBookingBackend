@@ -18,8 +18,9 @@ public interface IUserService {
 	public UserDTO getByUserId(int userId) throws UserNotFoundException;//we can fetch details by using userid
 	public List<UserDTO> getAllUsers() throws UserNotFoundException; // It is used to fetch all user details
 	public UserDTO rechargeWallet(int userId ,long amount);// If a user wanted to recharge his wallet,they can use this method
-	public UserDTO changePassword(int userId, String password); //User can change his password
+	public UserDTO changeUserPassword(int userId, String password); //User can change his password
 	public void sendEmailOnRegistration(User user);//After registration the user details are sent to his/her email
     public String getLoginRole(String name);
     public int getLoginId(String name);
+    public boolean verifyuserpassword(String password,int userId);
 }

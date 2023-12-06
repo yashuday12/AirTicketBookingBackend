@@ -1,110 +1,392 @@
-2023-12-04T00:00:11.234+05:30  INFO 3104 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:11.234+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:11.245+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:11.245+05:30  INFO 3104 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:11.270+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:11.271+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:11.271+05:30  INFO 3104 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:11.272+05:30  INFO 3104 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:11.274+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Validating token for username: uday
-2023-12-04T00:00:11.274+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Checking if token is expired
-2023-12-04T00:00:11.274+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting expiration from token
-2023-12-04T00:00:11.274+05:30  INFO 3104 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Validating token for username: uday
-2023-12-04T00:00:11.274+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:11.274+05:30  INFO 3104 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Checking if token is expired
-2023-12-04T00:00:11.274+05:30  INFO 3104 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting expiration from token
-2023-12-04T00:00:11.274+05:30  INFO 3104 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:11.281+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.c.PassengerRestController          : Received request to fetch booked seats for travelDate: 2023-12-05 and flightId: 4002
-2023-12-04T00:00:11.281+05:30  INFO 3104 --- [http-nio-8080-exec-3] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4002
-2023-12-04T00:00:11.281+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.PassenegrServiceImp       : Passenger Service - Based on the travelled date: 2023-12-05 and flight ID: 4002 fetched booked seats successfully
-2023-12-04T00:00:11.288+05:30  INFO 3104 --- [http-nio-8080-exec-3] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4002
-2023-12-04T00:00:14.191+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:14.191+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:14.202+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:14.204+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:14.207+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Validating token for username: uday
-2023-12-04T00:00:14.208+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Checking if token is expired
-2023-12-04T00:00:14.208+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting expiration from token
-2023-12-04T00:00:14.208+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:14.216+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4002
-2023-12-04T00:00:14.222+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4002
-2023-12-04T00:00:23.176+05:30  INFO 3104 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:23.176+05:30  INFO 3104 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:23.177+05:30  INFO 3104 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:23.177+05:30  INFO 3104 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:23.195+05:30  INFO 3104 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:23.196+05:30  INFO 3104 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:23.199+05:30  INFO 3104 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:23.199+05:30  INFO 3104 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:23.201+05:30  INFO 3104 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Validating token for username: uday
-2023-12-04T00:00:23.203+05:30  INFO 3104 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Checking if token is expired
-2023-12-04T00:00:23.203+05:30  INFO 3104 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting expiration from token
-2023-12-04T00:00:23.203+05:30  INFO 3104 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:23.204+05:30  INFO 3104 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Validating token for username: uday
-2023-12-04T00:00:23.204+05:30  INFO 3104 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Checking if token is expired
-2023-12-04T00:00:23.204+05:30  INFO 3104 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting expiration from token
-2023-12-04T00:00:23.204+05:30  INFO 3104 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:23.212+05:30  INFO 3104 --- [http-nio-8080-exec-5] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4002
-2023-12-04T00:00:23.216+05:30  INFO 3104 --- [http-nio-8080-exec-6] c.h.a.c.PassengerRestController          : Received request to fetch booked seats for travelDate: 2023-12-05 and flightId: 4002
-2023-12-04T00:00:23.217+05:30  INFO 3104 --- [http-nio-8080-exec-6] c.h.a.services.PassenegrServiceImp       : Passenger Service - Based on the travelled date: 2023-12-05 and flight ID: 4002 fetched booked seats successfully
-2023-12-04T00:00:23.222+05:30  INFO 3104 --- [http-nio-8080-exec-5] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4002
-2023-12-04T00:00:27.102+05:30  INFO 3104 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:27.103+05:30  INFO 3104 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:27.119+05:30  INFO 3104 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:27.120+05:30  INFO 3104 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:27.129+05:30  INFO 3104 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Validating token for username: uday
-2023-12-04T00:00:27.130+05:30  INFO 3104 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Checking if token is expired
-2023-12-04T00:00:27.130+05:30  INFO 3104 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting expiration from token
-2023-12-04T00:00:27.130+05:30  INFO 3104 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:27.136+05:30  INFO 3104 --- [http-nio-8080-exec-7] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4002
-2023-12-04T00:00:27.144+05:30  INFO 3104 --- [http-nio-8080-exec-7] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4002
-2023-12-04T00:00:41.445+05:30  INFO 3104 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:41.446+05:30  INFO 3104 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:41.456+05:30  INFO 3104 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:41.457+05:30  INFO 3104 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:41.461+05:30  INFO 3104 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Validating token for username: uday
-2023-12-04T00:00:41.461+05:30  INFO 3104 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Checking if token is expired
-2023-12-04T00:00:41.461+05:30  INFO 3104 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting expiration from token
-2023-12-04T00:00:41.461+05:30  INFO 3104 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:41.480+05:30  INFO 3104 --- [http-nio-8080-exec-9] c.h.a.controller.TicketRestController    : Received request to book air ticket for userName: 100 and flightId: 4002
-2023-12-04T00:00:41.491+05:30  INFO 3104 --- [http-nio-8080-exec-9] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Inserting ticket for user: 100 on flight ID: 4002
-2023-12-04T00:00:41.653+05:30  INFO 3104 --- [http-nio-8080-exec-9] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Ticket inserted successfully. Ticket ID: 1019
-2023-12-04T00:00:41.684+05:30  INFO 3104 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:41.684+05:30  INFO 3104 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:41.697+05:30  INFO 3104 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:41.697+05:30  INFO 3104 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:41.704+05:30  INFO 3104 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Validating token for username: uday
-2023-12-04T00:00:41.704+05:30  INFO 3104 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Checking if token is expired
-2023-12-04T00:00:41.704+05:30  INFO 3104 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting expiration from token
-2023-12-04T00:00:41.704+05:30  INFO 3104 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:41.711+05:30  INFO 3104 --- [http-nio-8080-exec-2] c.h.a.controller.TicketRestController    : Received request to fetch booking details for ticketId: 1019
-2023-12-04T00:00:41.712+05:30  INFO 3104 --- [http-nio-8080-exec-2] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching Ticket with ID: 1019
-2023-12-04T00:00:41.725+05:30  INFO 3104 --- [http-nio-8080-exec-2] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Ticket fetched successfully for ID: 1019
-2023-12-04T00:00:41.737+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:41.738+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:41.749+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:41.749+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:41.752+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Validating token for username: uday
-2023-12-04T00:00:41.752+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Checking if token is expired
-2023-12-04T00:00:41.752+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting expiration from token
-2023-12-04T00:00:41.752+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:41.759+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4002
-2023-12-04T00:00:41.770+05:30  INFO 3104 --- [http-nio-8080-exec-1] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4002
-2023-12-04T00:00:41.786+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:41.786+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:41.795+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T00:00:41.795+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:41.800+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Validating token for username: uday
-2023-12-04T00:00:41.800+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Checking if token is expired
-2023-12-04T00:00:41.800+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting expiration from token
-2023-12-04T00:00:41.800+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T00:00:41.808+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.c.PassengerRestController          : Received request to get passengers by ticketId: 1019
-2023-12-04T00:00:41.808+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.PassenegrServiceImp       : Passenger Service - Fetching passengers for ticket ID: 1019
-2023-12-04T00:00:41.817+05:30  INFO 3104 --- [http-nio-8080-exec-4] c.h.a.services.PassenegrServiceImp       : Passenger Service - Passengers fetched successfully for ticket ID: 1019. Count: 1
-2023-12-04T00:05:12.904+05:30  INFO 3104 --- [RMI TCP Connection(24)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2023-12-04T00:05:12.923+05:30  INFO 3104 --- [RMI TCP Connection(24)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-12-04T00:05:12.925+05:30  INFO 3104 --- [RMI TCP Connection(24)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-12-04T00:05:12.929+05:30  WARN 3104 --- [RMI TCP Connection(24)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2023-12-06T00:00:02.259+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:00:02.268+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:00:02.278+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:00:02.279+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:00:02.280+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:00:02.281+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:00:02.281+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:00:02.281+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:00:02.285+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.controller.TicketRestController    : Received request to view all tickets booked for flight added by flightOwnerId: 3000
+2023-12-06T00:00:02.285+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets for flight owner ID: 3000
+2023-12-06T00:00:02.327+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully for flight owner ID: 3000. Count: 14
+2023-12-06T00:00:05.115+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:00:05.116+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:00:05.126+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:00:05.126+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:00:05.127+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:00:05.127+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:00:05.127+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:00:05.127+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:00:05.130+05:30  WARN 8316 --- [http-nio-8080-exec-1] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.controller.FlightOwnerRestController
+2023-12-06T00:00:05.131+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.c.FlightOwnerRestController        : Received request to get flight owner details for flightOwnerId: 3000
+2023-12-06T00:00:05.135+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching Flight Owner with ID :3000
+2023-12-06T00:05:54.935+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.controller.LoginRestController     : Received request for user login for username: surya
+2023-12-06T00:05:55.119+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Generating token for username: surya
+2023-12-06T00:05:55.119+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Creating token for username: surya
+2023-12-06T00:05:55.130+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.controller.LoginRestController     : User login successful for username: surya
+2023-12-06T00:05:55.137+05:30  WARN 8316 --- [http-nio-8080-exec-6] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.controller.LoginRestController
+2023-12-06T00:06:28.408+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:06:28.409+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:06:28.420+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:06:28.420+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:06:28.422+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:06:28.422+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:06:28.422+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:06:28.422+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:06:28.425+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.controller.TicketRestController    : Received request to view all tickets booked for flight added by flightOwnerId: 3000
+2023-12-06T00:06:28.425+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets for flight owner ID: 3000
+2023-12-06T00:06:28.463+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully for flight owner ID: 3000. Count: 14
+2023-12-06T00:06:31.340+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:06:31.341+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:06:31.356+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:06:31.356+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:06:31.358+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:06:31.358+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:06:31.358+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:06:31.358+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:06:32.976+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:06:32.977+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:06:32.987+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:06:32.987+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:06:32.989+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:06:32.989+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:06:32.989+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:06:32.989+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:06:32.992+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.c.FlightOwnerRestController        : Received request to get flight owner details for flightOwnerId: 3000
+2023-12-06T00:06:32.997+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching Flight Owner with ID :3000
+2023-12-06T00:06:35.049+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:06:35.049+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:06:35.060+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:06:35.060+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:06:35.061+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:06:35.061+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:06:35.061+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:06:35.061+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:15.939+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:07:15.940+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:15.953+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:07:15.953+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:15.955+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:07:15.955+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:07:15.955+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:07:15.955+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:15.961+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.controller.TicketRestController    : Received request to view all tickets booked for flight added by flightOwnerId: 3000
+2023-12-06T00:07:15.962+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets for flight owner ID: 3000
+2023-12-06T00:07:16.017+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully for flight owner ID: 3000. Count: 14
+2023-12-06T00:07:17.456+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:07:17.457+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:17.473+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:07:17.473+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:17.476+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:07:17.476+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:07:17.477+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:07:17.477+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:32.850+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:07:32.852+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:32.866+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:07:32.867+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:32.869+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:07:32.869+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:07:32.869+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:07:32.869+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:37.644+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:07:37.644+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:37.660+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:07:37.661+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:37.663+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:07:37.663+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:07:37.663+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:07:37.663+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:37.669+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.controller.TicketRestController    : Received request to view all tickets booked for flight added by flightOwnerId: 3000
+2023-12-06T00:07:37.670+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets for flight owner ID: 3000
+2023-12-06T00:07:37.727+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully for flight owner ID: 3000. Count: 14
+2023-12-06T00:07:39.424+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:07:39.424+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:39.440+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:07:39.440+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:39.442+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:07:39.442+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:07:39.442+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:07:39.443+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:40.480+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:07:40.480+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:40.493+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:07:40.493+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:40.494+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:07:40.494+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:07:40.495+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:07:40.495+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:07:40.501+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.c.FlightOwnerRestController        : Received request to get flight owner details for flightOwnerId: 3000
+2023-12-06T00:07:40.506+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching Flight Owner with ID :3000
+2023-12-06T00:08:15.201+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:08:15.201+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:08:15.212+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:08:15.212+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:08:15.214+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:08:15.214+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:08:15.215+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:08:15.215+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:08:31.380+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:08:31.380+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:08:31.395+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:08:31.395+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:08:31.398+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:08:31.398+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:08:31.398+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:08:31.398+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:08:38.793+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:08:38.793+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:08:38.807+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:08:38.807+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:08:38.810+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:08:38.810+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:08:38.810+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:08:38.810+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:08:38.815+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.controller.TicketRestController    : Received request to view all tickets booked for flight added by flightOwnerId: 3000
+2023-12-06T00:08:38.815+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets for flight owner ID: 3000
+2023-12-06T00:08:38.870+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully for flight owner ID: 3000. Count: 14
+2023-12-06T00:10:53.334+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:10:53.334+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:10:53.346+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:10:53.346+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:10:53.348+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:10:53.348+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:10:53.348+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:10:53.348+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:12:22.060+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:12:22.060+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:12:22.079+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:12:22.080+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:12:22.085+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:12:22.086+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:12:22.086+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:12:22.087+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:12:28.254+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:12:28.254+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:12:28.270+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:12:28.270+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:12:28.273+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:12:28.273+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:12:28.273+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:12:28.273+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:12:28.281+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.controller.TicketRestController    : Received request to view all tickets booked for flight added by flightOwnerId: 3000
+2023-12-06T00:12:28.282+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets for flight owner ID: 3000
+2023-12-06T00:12:28.343+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully for flight owner ID: 3000. Count: 14
+2023-12-06T00:12:31.683+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:12:31.684+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:12:31.700+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:12:31.700+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:12:31.702+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:12:31.702+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:12:31.702+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:12:31.702+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:12:48.686+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:12:48.687+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:12:48.701+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:12:48.701+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:12:48.703+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:12:48.703+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:12:48.703+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:12:48.703+05:30  INFO 8316 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:13:00.644+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:13:00.645+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:13:00.660+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:13:00.661+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:13:00.664+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:13:00.664+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:13:00.665+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:13:00.665+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:13:04.239+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:13:04.240+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:13:04.255+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:13:04.256+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:13:04.257+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:13:04.258+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:13:04.258+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:13:04.258+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:13:04.262+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.controller.TicketRestController    : Received request to view all tickets booked for flight added by flightOwnerId: 3000
+2023-12-06T00:13:04.263+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets for flight owner ID: 3000
+2023-12-06T00:13:04.317+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully for flight owner ID: 3000. Count: 14
+2023-12-06T00:13:05.573+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:13:05.573+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:13:05.589+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:13:05.589+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:13:05.591+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:13:05.591+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:13:05.591+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:13:05.591+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:13:06.438+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:13:06.438+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:13:06.453+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:13:06.454+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:13:06.456+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:13:06.456+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:13:06.456+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:13:06.456+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:13:06.460+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.c.FlightOwnerRestController        : Received request to get flight owner details for flightOwnerId: 3000
+2023-12-06T00:13:06.464+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching Flight Owner with ID :3000
+2023-12-06T00:14:19.244+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:14:19.244+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:14:19.262+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:14:19.262+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:14:19.265+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:14:19.265+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:14:19.265+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:14:19.265+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:14:19.272+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.controller.TicketRestController    : Received request to view all tickets booked for flight added by flightOwnerId: 3000
+2023-12-06T00:14:19.273+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets for flight owner ID: 3000
+2023-12-06T00:14:19.324+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully for flight owner ID: 3000. Count: 14
+2023-12-06T00:14:20.216+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:14:20.217+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:14:20.230+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:14:20.230+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:14:20.232+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:14:20.232+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:14:20.232+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:14:20.233+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:14:21.115+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:14:21.115+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:14:21.131+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:14:21.131+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:14:21.133+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-06T00:14:21.133+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:14:21.133+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:14:21.133+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:14:21.138+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.c.FlightOwnerRestController        : Received request to get flight owner details for flightOwnerId: 3000
+2023-12-06T00:14:21.142+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching Flight Owner with ID :3000
+2023-12-06T00:27:28.976+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.controller.LoginRestController     : Received request for user login for username: yashwanth
+2023-12-06T00:27:29.182+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Generating token for username: yashwanth
+2023-12-06T00:27:29.182+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Creating token for username: yashwanth
+2023-12-06T00:27:29.184+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.controller.LoginRestController     : User login successful for username: yashwanth
+2023-12-06T00:27:32.129+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:27:32.129+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:27:32.138+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:27:32.138+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:27:32.140+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-06T00:27:32.140+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:27:32.141+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:27:32.141+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:27:32.146+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.c.FlightOwnerRestController        : Received request to get all flight owners
+2023-12-06T00:27:32.146+05:30  INFO 8316 --- [http-nio-8080-exec-3] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching all Flight Owners
+2023-12-06T00:27:38.658+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:27:38.659+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:27:38.663+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:27:38.664+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:27:38.666+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-06T00:27:38.666+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:27:38.666+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:27:38.666+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:27:38.671+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.c.FlightOwnerRestController        : Received request to delete flight owner with flightOwnerId: 3002
+2023-12-06T00:27:38.671+05:30  INFO 8316 --- [http-nio-8080-exec-5] c.h.a.services.FlightownerServiceImp     : Flight Owner Data with ID :3002 deleted successfully in the Flight Owner Service Implementation
+2023-12-06T00:27:38.711+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:27:38.712+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:27:38.720+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:27:38.720+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:27:38.722+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-06T00:27:38.722+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:27:38.722+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:27:38.722+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:27:38.726+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.c.FlightOwnerRestController        : Received request to get all flight owners
+2023-12-06T00:27:38.726+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching all Flight Owners
+2023-12-06T00:40:33.556+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:40:33.556+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:40:33.568+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:40:33.568+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:40:33.586+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-06T00:40:33.586+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:40:33.586+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:40:33.586+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:40:33.593+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.c.FlightOwnerRestController        : Received request to get all flight owners
+2023-12-06T00:40:33.593+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching all Flight Owners
+2023-12-06T00:42:06.658+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:42:06.658+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:42:06.667+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:42:06.668+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:42:06.671+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-06T00:42:06.671+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:42:06.671+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:42:06.672+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:42:06.677+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.c.FlightOwnerRestController        : Received request to get all flight owners
+2023-12-06T00:42:06.677+05:30  INFO 8316 --- [http-nio-8080-exec-2] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching all Flight Owners
+2023-12-06T00:43:03.676+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:43:03.677+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:03.684+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:43:03.684+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:03.692+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-06T00:43:03.692+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:43:03.692+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:43:03.692+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:03.699+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.c.FlightOwnerRestController        : Received request to get all flight owners
+2023-12-06T00:43:03.699+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching all Flight Owners
+2023-12-06T00:43:07.736+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:43:07.736+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:07.742+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:43:07.742+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:07.745+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-06T00:43:07.745+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:43:07.746+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:43:07.746+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:07.750+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.controller.TicketRestController    : Received request to view all ticket details
+2023-12-06T00:43:07.750+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets.
+2023-12-06T00:43:07.795+05:30  INFO 8316 --- [http-nio-8080-exec-4] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully.
+2023-12-06T00:43:12.178+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:43:12.179+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:12.185+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:43:12.185+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:12.189+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-06T00:43:12.189+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:43:12.189+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:43:12.189+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:12.195+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.controller.TicketRestController    : Received request to cancel ticket for ticketId: 1007
+2023-12-06T00:43:12.196+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Deleting Ticket with ID: 1007
+2023-12-06T00:43:12.228+05:30  INFO 8316 --- [http-nio-8080-exec-7] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Ticket Data with ID: 1007 deleted successfully.
+2023-12-06T00:43:12.258+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:43:12.258+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:12.267+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:43:12.268+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:12.270+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-06T00:43:12.271+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:43:12.271+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:43:12.271+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:12.275+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.controller.TicketRestController    : Received request to view all ticket details
+2023-12-06T00:43:12.275+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets.
+2023-12-06T00:43:12.319+05:30  INFO 8316 --- [http-nio-8080-exec-6] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully.
+2023-12-06T00:43:14.054+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:43:14.054+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:14.059+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:43:14.059+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:14.061+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-06T00:43:14.061+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:43:14.061+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:43:14.061+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:14.066+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.controller.TicketRestController    : Received request to cancel ticket for ticketId: 1009
+2023-12-06T00:43:14.066+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Deleting Ticket with ID: 1009
+2023-12-06T00:43:14.100+05:30  INFO 8316 --- [http-nio-8080-exec-9] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Ticket Data with ID: 1009 deleted successfully.
+2023-12-06T00:43:14.136+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:43:14.136+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:14.145+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:43:14.145+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:14.147+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-06T00:43:14.147+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:43:14.147+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:43:14.147+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:14.153+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.controller.TicketRestController    : Received request to view all ticket details
+2023-12-06T00:43:14.153+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets.
+2023-12-06T00:43:14.204+05:30  INFO 8316 --- [http-nio-8080-exec-10] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully.
+2023-12-06T00:43:47.100+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:43:47.101+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:47.106+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting username from token
+2023-12-06T00:43:47.107+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:47.108+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-06T00:43:47.108+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-06T00:43:47.108+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-06T00:43:47.108+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-06T00:43:47.112+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.controller.UserRestController      : Received request to get all registered users
+2023-12-06T00:43:47.112+05:30  INFO 8316 --- [http-nio-8080-exec-1] c.h.a.services.UserServiceImp            : User Service Implementation-Fetching all users from the repository
+2023-12-06T00:59:07.157+05:30  INFO 8316 --- [RMI TCP Connection(68)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-12-06T00:59:07.174+05:30  INFO 8316 --- [RMI TCP Connection(68)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-06T00:59:07.176+05:30  INFO 8316 --- [RMI TCP Connection(68)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-06T00:59:07.179+05:30  WARN 8316 --- [RMI TCP Connection(68)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
  java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
  java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
@@ -114,7 +396,7 @@
  java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
  java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
  java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
-2023-12-04T00:05:12.930+05:30  WARN 3104 --- [RMI TCP Connection(24)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+2023-12-06T00:59:07.180+05:30  WARN 8316 --- [RMI TCP Connection(68)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [logback-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
  java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
  java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
  java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
@@ -127,555 +409,6 @@
  java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
  java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
  java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
-2023-12-04T00:05:12.939+05:30  INFO 3104 --- [RMI TCP Connection(24)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-04T00:05:12.942+05:30  INFO 3104 --- [RMI TCP Connection(24)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-12-04T00:05:12.950+05:30  INFO 3104 --- [RMI TCP Connection(24)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-12-04T09:24:51.128+05:30  INFO 2652 --- [main] h.a.SimplyFlyAirTicketBookingApplication : Starting SimplyFlyAirTicketBookingApplication using Java 17.0.8.1 with PID 2652 (C:\Users\USER\AirTicketBookingBackend\SimplyFly-AirTicketBooking\target\classes started by USER in C:\Users\USER\AirTicketBookingBackend\SimplyFly-AirTicketBooking)
-2023-12-04T09:24:51.133+05:30  INFO 2652 --- [main] h.a.SimplyFlyAirTicketBookingApplication : No active profile set, falling back to 1 default profile: "default"
-2023-12-04T09:24:53.331+05:30  INFO 2652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-04T09:24:53.487+05:30  INFO 2652 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 145 ms. Found 7 JPA repository interfaces.
-2023-12-04T09:24:54.731+05:30  INFO 2652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-12-04T09:24:54.756+05:30  INFO 2652 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-04T09:24:54.758+05:30  INFO 2652 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
-2023-12-04T09:24:54.967+05:30  INFO 2652 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-04T09:24:54.967+05:30  INFO 2652 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3748 ms
-2023-12-04T09:24:55.230+05:30  INFO 2652 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-04T09:24:55.363+05:30  INFO 2652 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
-2023-12-04T09:24:55.745+05:30  WARN 2652 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-12-04T09:24:56.024+05:30  INFO 2652 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-12-04T09:24:56.736+05:30  INFO 2652 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c8f71a7
-2023-12-04T09:24:56.740+05:30  INFO 2652 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-12-04T09:24:56.914+05:30  INFO 2652 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-12-04T09:24:59.074+05:30  INFO 2652 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-04T09:24:59.096+05:30  INFO 2652 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-04T09:24:59.518+05:30  WARN 2652 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IAdminRepository
-2023-12-04T09:25:00.063+05:30  WARN 2652 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IUserRepository
-2023-12-04T09:25:00.142+05:30  WARN 2652 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IFlightOwnerRepository
-2023-12-04T09:25:00.434+05:30  WARN 2652 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IFlightRepository
-2023-12-04T09:25:01.083+05:30  WARN 2652 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-04T09:25:02.352+05:30  INFO 2652 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3e0eb917, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@589dac96, org.springframework.security.web.context.SecurityContextHolderFilter@4efb7c99, org.springframework.security.web.header.HeaderWriterFilter@1b32aaca, org.springframework.web.filter.CorsFilter@792bf78a, org.springframework.security.web.authentication.logout.LogoutFilter@2c1ffb9, com.hexaware.airticketbooking.filter.JwtAuthFilter@4822fc53, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20a3118, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@28068327, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e60925d, org.springframework.security.web.session.SessionManagementFilter@2fc698a9, org.springframework.security.web.access.ExceptionTranslationFilter@2640f5ea, org.springframework.security.web.access.intercept.AuthorizationFilter@2008dfa7]
-2023-12-04T09:25:03.046+05:30  INFO 2652 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-12-04T09:25:03.063+05:30  INFO 2652 --- [main] h.a.SimplyFlyAirTicketBookingApplication : Started SimplyFlyAirTicketBookingApplication in 12.807 seconds (process running for 14.158)
-2023-12-04T09:37:38.013+05:30  INFO 2652 --- [RMI TCP Connection(16)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2023-12-04T09:37:38.037+05:30  INFO 2652 --- [RMI TCP Connection(16)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-12-04T09:37:38.043+05:30  WARN 2652 --- [RMI TCP Connection(16)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
- java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
- java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
- java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
- java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
- java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
- java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
-2023-12-04T09:37:38.053+05:30  INFO 2652 --- [RMI TCP Connection(16)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-04T09:37:38.057+05:30  INFO 2652 --- [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-12-04T09:37:38.068+05:30  INFO 2652 --- [RMI TCP Connection(16)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-12-04T12:43:24.182+05:30  INFO 9928 --- [main] h.a.SimplyFlyAirTicketBookingApplication : Starting SimplyFlyAirTicketBookingApplication using Java 17.0.8.1 with PID 9928 (C:\Users\USER\AirTicketBookingBackend\SimplyFly-AirTicketBooking\target\classes started by USER in C:\Users\USER\AirTicketBookingBackend\SimplyFly-AirTicketBooking)
-2023-12-04T12:43:24.187+05:30  INFO 9928 --- [main] h.a.SimplyFlyAirTicketBookingApplication : No active profile set, falling back to 1 default profile: "default"
-2023-12-04T12:43:25.989+05:30  INFO 9928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-04T12:43:26.098+05:30  INFO 9928 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 95 ms. Found 7 JPA repository interfaces.
-2023-12-04T12:43:26.876+05:30  INFO 9928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-12-04T12:43:26.892+05:30  INFO 9928 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-04T12:43:26.893+05:30  INFO 9928 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
-2023-12-04T12:43:27.019+05:30  INFO 9928 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-04T12:43:27.020+05:30  INFO 9928 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2771 ms
-2023-12-04T12:43:27.209+05:30  INFO 9928 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-04T12:43:27.293+05:30  INFO 9928 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
-2023-12-04T12:43:27.556+05:30  WARN 9928 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-12-04T12:43:27.715+05:30  INFO 9928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-12-04T12:43:28.122+05:30  INFO 9928 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@f1d1463
-2023-12-04T12:43:28.124+05:30  INFO 9928 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-12-04T12:43:28.214+05:30  INFO 9928 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-12-04T12:43:30.277+05:30  INFO 9928 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-04T12:43:30.297+05:30  INFO 9928 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-04T12:43:30.804+05:30  WARN 9928 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IAdminRepository
-2023-12-04T12:43:31.489+05:30  WARN 9928 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IUserRepository
-2023-12-04T12:43:31.555+05:30  WARN 9928 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IFlightOwnerRepository
-2023-12-04T12:43:31.832+05:30  WARN 9928 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IFlightRepository
-2023-12-04T12:43:32.525+05:30  WARN 9928 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-04T12:43:33.839+05:30  INFO 9928 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2c1ffb9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1bd97254, org.springframework.security.web.context.SecurityContextHolderFilter@1b32aaca, org.springframework.security.web.header.HeaderWriterFilter@11f6a083, org.springframework.web.filter.CorsFilter@388a6656, org.springframework.security.web.authentication.logout.LogoutFilter@3d5a6849, com.hexaware.airticketbooking.filter.JwtAuthFilter@4b02dc4e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a14a8c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@879f852, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@32b19d03, org.springframework.security.web.session.SessionManagementFilter@32c7495, org.springframework.security.web.access.ExceptionTranslationFilter@2c64e2d0, org.springframework.security.web.access.intercept.AuthorizationFilter@1b204439]
-2023-12-04T12:43:34.477+05:30  INFO 9928 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-12-04T12:43:34.494+05:30  INFO 9928 --- [main] h.a.SimplyFlyAirTicketBookingApplication : Started SimplyFlyAirTicketBookingApplication in 11.145 seconds (process running for 12.59)
-2023-12-04T12:44:57.139+05:30  INFO 9928 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-12-04T12:44:57.140+05:30  INFO 9928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-12-04T12:44:57.143+05:30  INFO 9928 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
-2023-12-04T12:44:57.388+05:30  INFO 9928 --- [http-nio-8080-exec-2] c.h.a.controller.LoginRestController     : Received request for user login for username: uday
-2023-12-04T12:44:58.015+05:30  INFO 9928 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Generating token for username: uday
-2023-12-04T12:44:58.015+05:30  INFO 9928 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Creating token for username: uday
-2023-12-04T12:44:58.087+05:30  INFO 9928 --- [http-nio-8080-exec-2] c.h.a.controller.LoginRestController     : User login successful for username: uday
-2023-12-04T12:44:58.123+05:30  WARN 9928 --- [http-nio-8080-exec-3] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.controller.LoginRestController
-2023-12-04T12:45:29.616+05:30  WARN 9928 --- [http-nio-8080-exec-7] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.controller.FlightRestController
-2023-12-04T12:45:29.617+05:30  INFO 9928 --- [http-nio-8080-exec-7] c.h.a.controller.FlightRestController    : Received request to search flights from assam to rajampet
-2023-12-04T12:45:29.651+05:30  INFO 9928 --- [http-nio-8080-exec-7] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Flight search from assam to rajampet successful.
-2023-12-04T12:45:29.691+05:30  INFO 9928 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T12:45:29.693+05:30  INFO 9928 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T12:45:29.710+05:30 ERROR 9928 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-
-io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
-	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at com.hexaware.airticketbooking.services.JwtService.extractAllClaims(JwtService.java:82) ~[classes/:na]
-	at com.hexaware.airticketbooking.services.JwtService.extractClaim(JwtService.java:71) ~[classes/:na]
-	at com.hexaware.airticketbooking.services.JwtService.extractUsername(JwtService.java:61) ~[classes/:na]
-	at com.hexaware.airticketbooking.filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:37) ~[classes/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:351) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2023-12-04T12:46:46.172+05:30  INFO 9928 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T12:46:46.173+05:30  INFO 9928 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T12:46:46.176+05:30 ERROR 9928 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-
-io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
-	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at com.hexaware.airticketbooking.services.JwtService.extractAllClaims(JwtService.java:82) ~[classes/:na]
-	at com.hexaware.airticketbooking.services.JwtService.extractClaim(JwtService.java:71) ~[classes/:na]
-	at com.hexaware.airticketbooking.services.JwtService.extractUsername(JwtService.java:61) ~[classes/:na]
-	at com.hexaware.airticketbooking.filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:37) ~[classes/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:351) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2023-12-04T12:51:32.315+05:30  INFO 9928 --- [http-nio-8080-exec-3] c.h.a.controller.LoginRestController     : Received request for user login for username: uday
-2023-12-04T12:51:32.489+05:30  INFO 9928 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Generating token for username: uday
-2023-12-04T12:51:32.489+05:30  INFO 9928 --- [http-nio-8080-exec-3] c.h.a.services.JwtService                : Creating token for username: uday
-2023-12-04T12:51:32.491+05:30  INFO 9928 --- [http-nio-8080-exec-3] c.h.a.controller.LoginRestController     : User login successful for username: uday
-2023-12-04T12:51:48.243+05:30  INFO 9928 --- [http-nio-8080-exec-8] c.h.a.controller.FlightRestController    : Received request to search flights from assam to rajampet
-2023-12-04T12:51:48.253+05:30  INFO 9928 --- [http-nio-8080-exec-8] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Flight search from assam to rajampet successful.
-2023-12-04T12:51:48.261+05:30  INFO 9928 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T12:51:48.261+05:30  INFO 9928 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T12:51:48.328+05:30  INFO 9928 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T12:51:48.328+05:30  INFO 9928 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T12:51:48.330+05:30  INFO 9928 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Validating token for username: uday
-2023-12-04T12:51:48.331+05:30  INFO 9928 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Checking if token is expired
-2023-12-04T12:51:48.331+05:30  INFO 9928 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting expiration from token
-2023-12-04T12:51:48.332+05:30  INFO 9928 --- [http-nio-8080-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T12:51:48.341+05:30  WARN 9928 --- [http-nio-8080-exec-9] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.controller.PassengerRestController
-2023-12-04T12:51:48.358+05:30  INFO 9928 --- [http-nio-8080-exec-9] c.h.a.c.PassengerRestController          : Received request to fetch booked seats for travelDate: 2023-12-05 and flightId: 4002
-2023-12-04T12:51:48.362+05:30  INFO 9928 --- [http-nio-8080-exec-9] c.h.a.services.PassenegrServiceImp       : Passenger Service - Based on the travelled date: 2023-12-05 and flight ID: 4002 fetched booked seats successfully
-2023-12-04T12:52:48.661+05:30  INFO 9928 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2023-12-04T12:52:48.687+05:30  INFO 9928 --- [RMI TCP Connection(13)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-12-04T12:52:48.690+05:30  INFO 9928 --- [RMI TCP Connection(13)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-12-04T12:52:48.696+05:30  WARN 9928 --- [RMI TCP Connection(13)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
- java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
- java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
- java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
- java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
- java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
- java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
-2023-12-04T12:52:48.705+05:30  INFO 9928 --- [RMI TCP Connection(13)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-04T12:52:48.707+05:30  INFO 9928 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-12-04T12:52:48.722+05:30  INFO 9928 --- [RMI TCP Connection(13)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-12-04T12:52:59.223+05:30  INFO 11208 --- [main] h.a.SimplyFlyAirTicketBookingApplication : Starting SimplyFlyAirTicketBookingApplication using Java 17.0.8.1 with PID 11208 (C:\Users\USER\AirTicketBookingBackend\SimplyFly-AirTicketBooking\target\classes started by USER in C:\Users\USER\AirTicketBookingBackend\SimplyFly-AirTicketBooking)
-2023-12-04T12:52:59.227+05:30  INFO 11208 --- [main] h.a.SimplyFlyAirTicketBookingApplication : No active profile set, falling back to 1 default profile: "default"
-2023-12-04T12:53:00.802+05:30  INFO 11208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-04T12:53:00.883+05:30  INFO 11208 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 7 JPA repository interfaces.
-2023-12-04T12:53:01.394+05:30  INFO 11208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-12-04T12:53:01.403+05:30  INFO 11208 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-04T12:53:01.404+05:30  INFO 11208 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
-2023-12-04T12:53:01.516+05:30  INFO 11208 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-04T12:53:01.517+05:30  INFO 11208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2231 ms
-2023-12-04T12:53:01.652+05:30  INFO 11208 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-04T12:53:01.701+05:30  INFO 11208 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
-2023-12-04T12:53:01.868+05:30  WARN 11208 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-12-04T12:53:01.980+05:30  INFO 11208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-12-04T12:53:02.542+05:30  INFO 11208 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68821f6
-2023-12-04T12:53:02.545+05:30  INFO 11208 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-12-04T12:53:02.614+05:30  INFO 11208 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-12-04T12:53:03.587+05:30  INFO 11208 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-04T12:53:03.596+05:30  INFO 11208 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-04T12:53:03.814+05:30  WARN 11208 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IAdminRepository
-2023-12-04T12:53:04.095+05:30  WARN 11208 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IUserRepository
-2023-12-04T12:53:04.144+05:30  WARN 11208 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IFlightOwnerRepository
-2023-12-04T12:53:04.276+05:30  WARN 11208 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IFlightRepository
-2023-12-04T12:53:04.604+05:30  WARN 11208 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-04T12:53:05.226+05:30  INFO 11208 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@50d02417, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@53425450, org.springframework.security.web.context.SecurityContextHolderFilter@3aafa1c1, org.springframework.security.web.header.HeaderWriterFilter@30b35687, org.springframework.web.filter.CorsFilter@314e240c, org.springframework.security.web.authentication.logout.LogoutFilter@570cef1e, com.hexaware.airticketbooking.filter.JwtAuthFilter@517fb2c3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@36cbe0fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@712a5de4, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7222e168, org.springframework.security.web.session.SessionManagementFilter@3f8090db, org.springframework.security.web.access.ExceptionTranslationFilter@708f4d81, org.springframework.security.web.access.intercept.AuthorizationFilter@45c8db36]
-2023-12-04T12:53:05.610+05:30  INFO 11208 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-12-04T12:53:05.620+05:30  INFO 11208 --- [main] h.a.SimplyFlyAirTicketBookingApplication : Started SimplyFlyAirTicketBookingApplication in 6.883 seconds (process running for 8.175)
-2023-12-04T12:54:45.052+05:30  INFO 11208 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-12-04T12:54:45.054+05:30  INFO 11208 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-12-04T12:54:45.056+05:30  INFO 11208 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
-2023-12-04T12:54:45.297+05:30  INFO 11208 --- [http-nio-8080-exec-1] c.h.a.controller.LoginRestController     : Received request for user login for username: uday
-2023-12-04T12:54:45.876+05:30  INFO 11208 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Generating token for username: uday
-2023-12-04T12:54:45.876+05:30  INFO 11208 --- [http-nio-8080-exec-1] c.h.a.services.JwtService                : Creating token for username: uday
-2023-12-04T12:54:45.941+05:30  INFO 11208 --- [http-nio-8080-exec-1] c.h.a.controller.LoginRestController     : User login successful for username: uday
-2023-12-04T12:54:47.587+05:30  WARN 11208 --- [http-nio-8080-exec-3] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.controller.LoginRestController
-2023-12-04T12:54:59.570+05:30  WARN 11208 --- [http-nio-8080-exec-5] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.controller.FlightRestController
-2023-12-04T12:54:59.572+05:30  INFO 11208 --- [http-nio-8080-exec-5] c.h.a.controller.FlightRestController    : Received request to search flights from assam to rajampet
-2023-12-04T12:54:59.600+05:30  INFO 11208 --- [http-nio-8080-exec-5] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Flight search from assam to rajampet successful.
-2023-12-04T12:54:59.635+05:30  INFO 11208 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T12:54:59.636+05:30  INFO 11208 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T12:54:59.652+05:30 ERROR 11208 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-
-io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
-	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at com.hexaware.airticketbooking.services.JwtService.extractAllClaims(JwtService.java:82) ~[classes/:na]
-	at com.hexaware.airticketbooking.services.JwtService.extractClaim(JwtService.java:71) ~[classes/:na]
-	at com.hexaware.airticketbooking.services.JwtService.extractUsername(JwtService.java:61) ~[classes/:na]
-	at com.hexaware.airticketbooking.filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:37) ~[classes/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:351) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2023-12-04T12:59:23.072+05:30  INFO 11208 --- [http-nio-8080-exec-10] c.h.a.controller.LoginRestController     : Received request for user login for username: uday
-2023-12-04T12:59:23.280+05:30  INFO 11208 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Generating token for username: uday
-2023-12-04T12:59:23.281+05:30  INFO 11208 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Creating token for username: uday
-2023-12-04T12:59:23.283+05:30  INFO 11208 --- [http-nio-8080-exec-10] c.h.a.controller.LoginRestController     : User login successful for username: uday
-2023-12-04T12:59:35.084+05:30  INFO 11208 --- [http-nio-8080-exec-3] c.h.a.controller.FlightRestController    : Received request to search flights from assam to rajasthan
-2023-12-04T12:59:35.090+05:30  INFO 11208 --- [http-nio-8080-exec-3] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Flight search from assam to rajasthan successful.
-2023-12-04T12:59:35.090+05:30  WARN 11208 --- [http-nio-8080-exec-3] c.h.a.controller.FlightRestController    : No flights found from assam to rajasthan
-2023-12-04T12:59:41.862+05:30  INFO 11208 --- [http-nio-8080-exec-5] c.h.a.controller.FlightRestController    : Received request to search flights from assam to rajampet
-2023-12-04T12:59:41.872+05:30  INFO 11208 --- [http-nio-8080-exec-5] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Flight search from assam to rajampet successful.
-2023-12-04T12:59:41.892+05:30  INFO 11208 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T12:59:41.893+05:30  INFO 11208 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T12:59:41.970+05:30  INFO 11208 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T12:59:41.971+05:30  INFO 11208 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T12:59:41.974+05:30  INFO 11208 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Validating token for username: uday
-2023-12-04T12:59:41.974+05:30  INFO 11208 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Checking if token is expired
-2023-12-04T12:59:41.974+05:30  INFO 11208 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting expiration from token
-2023-12-04T12:59:41.975+05:30  INFO 11208 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T12:59:41.986+05:30  WARN 11208 --- [http-nio-8080-exec-7] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.controller.PassengerRestController
-2023-12-04T12:59:42.003+05:30  INFO 11208 --- [http-nio-8080-exec-7] c.h.a.c.PassengerRestController          : Received request to fetch booked seats for travelDate: 2023-12-05 and flightId: 4002
-2023-12-04T12:59:42.006+05:30  INFO 11208 --- [http-nio-8080-exec-7] c.h.a.services.PassenegrServiceImp       : Passenger Service - Based on the travelled date: 2023-12-05 and flight ID: 4002 fetched booked seats successfully
-2023-12-04T12:59:54.371+05:30  INFO 11208 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2023-12-04T12:59:54.391+05:30  INFO 11208 --- [RMI TCP Connection(10)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-12-04T12:59:54.392+05:30  INFO 11208 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-12-04T12:59:54.395+05:30  WARN 11208 --- [RMI TCP Connection(10)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
- java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
- java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
- java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
- java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
- java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
- java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
-2023-12-04T12:59:54.406+05:30  INFO 11208 --- [RMI TCP Connection(10)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-04T12:59:54.409+05:30  INFO 11208 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-12-04T12:59:54.418+05:30  INFO 11208 --- [RMI TCP Connection(10)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
-2023-12-04T14:19:03.996+05:30  INFO 11464 --- [main] h.a.SimplyFlyAirTicketBookingApplication : Starting SimplyFlyAirTicketBookingApplication using Java 17.0.8.1 with PID 11464 (C:\Users\USER\AirTicketBookingBackend\SimplyFly-AirTicketBooking\target\classes started by USER in C:\Users\USER\AirTicketBookingBackend\SimplyFly-AirTicketBooking)
-2023-12-04T14:19:04.003+05:30  INFO 11464 --- [main] h.a.SimplyFlyAirTicketBookingApplication : No active profile set, falling back to 1 default profile: "default"
-2023-12-04T14:19:05.597+05:30  INFO 11464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-12-04T14:19:05.702+05:30  INFO 11464 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92 ms. Found 7 JPA repository interfaces.
-2023-12-04T14:19:06.611+05:30  INFO 11464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
-2023-12-04T14:19:06.652+05:30  INFO 11464 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2023-12-04T14:19:06.653+05:30  INFO 11464 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
-2023-12-04T14:19:07.010+05:30  INFO 11464 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2023-12-04T14:19:07.012+05:30  INFO 11464 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2901 ms
-2023-12-04T14:19:07.430+05:30  INFO 11464 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-12-04T14:19:07.648+05:30  INFO 11464 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
-2023-12-04T14:19:08.307+05:30  WARN 11464 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
-2023-12-04T14:19:08.778+05:30  INFO 11464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2023-12-04T14:19:09.596+05:30  INFO 11464 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4b7ab7ab
-2023-12-04T14:19:09.600+05:30  INFO 11464 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2023-12-04T14:19:09.775+05:30  INFO 11464 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-12-04T14:19:11.594+05:30  INFO 11464 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-12-04T14:19:11.606+05:30  INFO 11464 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-12-04T14:19:11.870+05:30  WARN 11464 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IAdminRepository
-2023-12-04T14:19:12.211+05:30  WARN 11464 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IUserRepository
-2023-12-04T14:19:12.249+05:30  WARN 11464 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IFlightOwnerRepository
-2023-12-04T14:19:12.416+05:30  WARN 11464 --- [main] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.repository.IFlightRepository
-2023-12-04T14:19:12.807+05:30  WARN 11464 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-12-04T14:19:13.776+05:30  INFO 11464 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5ed4c87, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30a1b9b0, org.springframework.security.web.context.SecurityContextHolderFilter@3d8c3d0a, org.springframework.security.web.header.HeaderWriterFilter@693676d, org.springframework.web.filter.CorsFilter@16908f89, org.springframework.security.web.authentication.logout.LogoutFilter@3f8090db, com.hexaware.airticketbooking.filter.JwtAuthFilter@57f83dc7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26c75b91, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3a44ebd5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5ca8157c, org.springframework.security.web.session.SessionManagementFilter@5563a63f, org.springframework.security.web.access.ExceptionTranslationFilter@5a14a8c1, org.springframework.security.web.access.intercept.AuthorizationFilter@589dac96]
-2023-12-04T14:19:14.242+05:30  INFO 11464 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
-2023-12-04T14:19:14.258+05:30  INFO 11464 --- [main] h.a.SimplyFlyAirTicketBookingApplication : Started SimplyFlyAirTicketBookingApplication in 11.127 seconds (process running for 12.647)
-2023-12-04T14:21:48.456+05:30  INFO 11464 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-12-04T14:21:48.457+05:30  INFO 11464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2023-12-04T14:21:48.460+05:30  INFO 11464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
-2023-12-04T14:21:48.742+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.controller.LoginRestController     : Received request for user login for username: uday
-2023-12-04T14:21:49.429+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Generating token for username: uday
-2023-12-04T14:21:49.429+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Creating token for username: uday
-2023-12-04T14:21:49.500+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.controller.LoginRestController     : User login successful for username: uday
-2023-12-04T14:21:49.526+05:30  WARN 11464 --- [http-nio-8080-exec-3] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.controller.LoginRestController
-2023-12-04T14:22:16.579+05:30  WARN 11464 --- [http-nio-8080-exec-6] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.controller.FlightRestController
-2023-12-04T14:22:16.580+05:30  INFO 11464 --- [http-nio-8080-exec-6] c.h.a.controller.FlightRestController    : Received request to search flights from assam to rajasthan
-2023-12-04T14:22:16.592+05:30  INFO 11464 --- [http-nio-8080-exec-6] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Flight search from assam to rajasthan successful.
-2023-12-04T14:22:16.593+05:30  WARN 11464 --- [http-nio-8080-exec-6] c.h.a.controller.FlightRestController    : No flights found from assam to rajasthan
-2023-12-04T14:22:24.941+05:30  INFO 11464 --- [http-nio-8080-exec-8] c.h.a.controller.FlightRestController    : Received request to search flights from assam to rajampet
-2023-12-04T14:22:24.977+05:30  INFO 11464 --- [http-nio-8080-exec-8] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Flight search from assam to rajampet successful.
-2023-12-04T14:22:25.025+05:30  INFO 11464 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T14:22:25.026+05:30  INFO 11464 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T14:22:25.137+05:30  INFO 11464 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T14:22:25.138+05:30  INFO 11464 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T14:22:25.140+05:30  INFO 11464 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Validating token for username: uday
-2023-12-04T14:22:25.141+05:30  INFO 11464 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Checking if token is expired
-2023-12-04T14:22:25.141+05:30  INFO 11464 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting expiration from token
-2023-12-04T14:22:25.143+05:30  INFO 11464 --- [http-nio-8080-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T14:22:25.155+05:30  WARN 11464 --- [http-nio-8080-exec-10] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.hexaware.airticketbooking.controller.PassengerRestController
-2023-12-04T14:22:25.172+05:30  INFO 11464 --- [http-nio-8080-exec-10] c.h.a.c.PassengerRestController          : Received request to fetch booked seats for travelDate: 2023-12-05 and flightId: 4002
-2023-12-04T14:22:25.175+05:30  INFO 11464 --- [http-nio-8080-exec-10] c.h.a.services.PassenegrServiceImp       : Passenger Service - Based on the travelled date: 2023-12-05 and flight ID: 4002 fetched booked seats successfully
-2023-12-04T14:24:13.251+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.controller.LoginRestController     : Received request for user login for username: uday
-2023-12-04T14:24:13.458+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Generating token for username: uday
-2023-12-04T14:24:13.458+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Creating token for username: uday
-2023-12-04T14:24:13.460+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.controller.LoginRestController     : User login successful for username: uday
-2023-12-04T14:40:29.225+05:30  INFO 11464 --- [http-nio-8080-exec-6] c.h.a.controller.FlightRestController    : Received request to search flights from assam to rajampet
-2023-12-04T14:40:29.235+05:30  INFO 11464 --- [http-nio-8080-exec-6] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Flight search from assam to rajampet successful.
-2023-12-04T14:40:29.244+05:30  INFO 11464 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T14:40:29.245+05:30  INFO 11464 --- [http-nio-8080-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T14:40:29.247+05:30 ERROR 11464 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
-
-io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period characters. Found: 0
-	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:275) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.DefaultJwtParser.parse(DefaultJwtParser.java:529) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.DefaultJwtParser.parseClaimsJws(DefaultJwtParser.java:589) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at io.jsonwebtoken.impl.ImmutableJwtParser.parseClaimsJws(ImmutableJwtParser.java:173) ~[jjwt-impl-0.11.5.jar:0.11.5]
-	at com.hexaware.airticketbooking.services.JwtService.extractAllClaims(JwtService.java:82) ~[classes/:na]
-	at com.hexaware.airticketbooking.services.JwtService.extractClaim(JwtService.java:71) ~[classes/:na]
-	at com.hexaware.airticketbooking.services.JwtService.extractUsername(JwtService.java:61) ~[classes/:na]
-	at com.hexaware.airticketbooking.filter.JwtAuthFilter.doFilterInternal(JwtAuthFilter.java:37) ~[classes/:na]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.0.1.jar:6.0.1]
-	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:351) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:267) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.3.jar:6.0.3]
-	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:185) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:158) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:177) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:119) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:400) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:859) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1734) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.4.jar:10.1.4]
-	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
-
-2023-12-04T14:41:21.924+05:30  INFO 11464 --- [http-nio-8080-exec-8] c.h.a.controller.LoginRestController     : Received request for user login for username: uday
-2023-12-04T14:41:22.018+05:30  INFO 11464 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Generating token for username: uday
-2023-12-04T14:41:22.018+05:30  INFO 11464 --- [http-nio-8080-exec-8] c.h.a.services.JwtService                : Creating token for username: uday
-2023-12-04T14:41:22.019+05:30  INFO 11464 --- [http-nio-8080-exec-8] c.h.a.controller.LoginRestController     : User login successful for username: uday
-2023-12-04T14:41:34.841+05:30  INFO 11464 --- [http-nio-8080-exec-1] c.h.a.controller.FlightRestController    : Received request to search flights from assam to rajampet
-2023-12-04T14:41:34.847+05:30  INFO 11464 --- [http-nio-8080-exec-1] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Flight search from assam to rajampet successful.
-2023-12-04T14:41:34.858+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T14:41:34.858+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T14:41:34.867+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting username from token
-2023-12-04T14:41:34.868+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T14:41:34.869+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Validating token for username: uday
-2023-12-04T14:41:34.869+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Checking if token is expired
-2023-12-04T14:41:34.869+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting expiration from token
-2023-12-04T14:41:34.869+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
-2023-12-04T14:41:34.873+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.c.PassengerRestController          : Received request to fetch booked seats for travelDate: 2023-12-05 and flightId: 4002
-2023-12-04T14:41:34.874+05:30  INFO 11464 --- [http-nio-8080-exec-2] c.h.a.services.PassenegrServiceImp       : Passenger Service - Based on the travelled date: 2023-12-05 and flight ID: 4002 fetched booked seats successfully
-2023-12-04T14:55:04.175+05:30  INFO 11464 --- [RMI TCP Connection(38)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
-2023-12-04T14:55:04.212+05:30  INFO 11464 --- [RMI TCP Connection(38)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
-2023-12-04T14:55:04.215+05:30  INFO 11464 --- [RMI TCP Connection(38)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-12-04T14:55:04.222+05:30  WARN 11464 --- [RMI TCP Connection(38)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
- java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
- java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
- java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
- java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
- java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
- java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
- java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
- java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
- java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
-2023-12-04T14:55:04.238+05:30  INFO 11464 --- [RMI TCP Connection(38)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-12-04T14:55:04.245+05:30  INFO 11464 --- [RMI TCP Connection(38)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2023-12-04T14:55:04.251+05:30  INFO 11464 --- [RMI TCP Connection(38)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-06T00:59:07.191+05:30  INFO 8316 --- [RMI TCP Connection(68)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-06T00:59:07.195+05:30  INFO 8316 --- [RMI TCP Connection(68)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-06T00:59:07.199+05:30  INFO 8316 --- [RMI TCP Connection(68)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

@@ -49,7 +49,7 @@ return userService.registerUser(userDto);
 	@PutMapping("/updateuser/{userId}")
 	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
 	public UpdateUserDTO editUserProfile(@RequestBody @Valid UpdateUserDTO userDto,@PathVariable int userId) {
-		logger.info("Received request to Edit user profile for userId: {}", userId);
+		
 		return userService.editUserProfile(userDto,userId);
 		
 	}
@@ -82,11 +82,11 @@ return userService.registerUser(userDto);
 		}
 		return userDto;
 	}
-	@PutMapping("/changePassword/{userId}/{password}")
+	@PutMapping("/changeuserpassword/{userId}/{password}")
 	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
-	public UserDTO changePassword(@PathVariable int userId,@PathVariable String password) {
+	public UserDTO changeUserPassword(@PathVariable int userId,@PathVariable String password) {
         logger.info("Received request to change password for userId: {}", userId);
-        return userService.changePassword(userId, password) ;
+        return userService.changeUserPassword(userId, password) ;
 		
 	}
 	@PutMapping("/rechargewallet/{userId}/{amount}")
@@ -95,5 +95,9 @@ return userService.registerUser(userDto);
 		return userService.rechargeWallet(userId, amount);
 		
 	}
-	
+	@GetMapping("/verifyuserpassword/{userId}/{password}")
+	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
+	public boolean verifyUserPassword(@PathVariable int userId, @PathVariable String password) {
+		return userService.verifyuserpassword(password, userId);
+	}
 }

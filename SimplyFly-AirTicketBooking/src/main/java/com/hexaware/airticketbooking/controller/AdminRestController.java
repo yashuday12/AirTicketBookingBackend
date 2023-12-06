@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.hexaware.airticketbooking.dto.AdminDTO;
 import com.hexaware.airticketbooking.dto.UpdateAdminDTO;
+import com.hexaware.airticketbooking.dto.UserDTO;
 import com.hexaware.airticketbooking.entities.Admin;
 import com.hexaware.airticketbooking.exceptions.AdminNotFoundException;
 import com.hexaware.airticketbooking.services.IAdminService;
@@ -33,7 +34,7 @@ import jakarta.validation.Valid;
  */
 @RestController
 @RequestMapping("/api/v1/admin")
-@CrossOrigin(origins="http://localhost:4200/")
+@CrossOrigin(origins="http://localhost:4200")
 public class AdminRestController {
 	private IAdminService adminService;
     Logger logger = LoggerFactory.getLogger(AdminRestController.class);
@@ -89,6 +90,18 @@ public class AdminRestController {
 			throw new AdminNotFoundException(HttpStatus.NO_CONTENT,"Zero Admins");	
 		}
 		return admin;
+	}
+	@GetMapping("/verifyadminpassword/{adminId}/{password}")
+	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN')")
+	public boolean verifyUserPassword(@PathVariable int adminId, @PathVariable String password) {
+		return adminService.verifyadminpassword(password, adminId);
+	}
+	@PutMapping("/changeadminpassword/{adminId}/{password}")
+	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN')")
+	public AdminDTO changeUserPassword(@PathVariable int adminId,@PathVariable String password) {
+        logger.info("Received request to change password for adminId: {}", adminId);
+        return adminService.changeAdminPassword(adminId, password);
+		
 	}
 	
 }

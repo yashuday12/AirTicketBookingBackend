@@ -8,8 +8,10 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.hexaware.airticketbooking.dto.AdminDTO;
+import com.hexaware.airticketbooking.dto.FlightOwnerDTO;
 import com.hexaware.airticketbooking.dto.UpdateAdminDTO;
 import com.hexaware.airticketbooking.entities.Admin;
+import com.hexaware.airticketbooking.entities.FlightOwner;
 import com.hexaware.airticketbooking.exceptions.AdminNotFoundException;
 import com.hexaware.airticketbooking.repository.IAdminRepository;
 /*
@@ -42,10 +44,9 @@ public class AdminServiceImp implements IAdminService {
 
 	@Override
 	public UpdateAdminDTO editAdminProfile(UpdateAdminDTO adminDto,int adminId) {
-		Admin admin=new Admin();
+		Admin admin=adminRepository.findById(adminId).orElse(new Admin());
 		admin.setAdminId(adminDto.getAdminId());
 		admin.setAdminName(adminDto.getAdminName());
-		
 		Admin adminTemp=adminRepository.save(admin);
 		logger.info("Admin Service Implementation -Updated the Admin data in existing record in  database successfully ");
 		return new UpdateAdminDTO(adminTemp.getAdminId(),adminTemp.getAdminName());
@@ -73,6 +74,31 @@ public class AdminServiceImp implements IAdminService {
 	public List<Admin> viewAllAdmin() throws AdminNotFoundException {
 		logger.info("Admin Service Implementation- Fetching all admins ");
 		return adminRepository.findAll();
+	}
+
+	@Override
+	public boolean verifyadminpassword(String password, int adminId) {
+		Admin admin=adminRepository.findById(adminId).orElse(new Admin());
+		boolean flag=false;
+		if(passwordEncoder.matches(password, admin.getAdminPassword())) {
+		  flag=true;
+	    }
+	    else {
+	    	flag=false;
+	    }
+		return flag;
+	
+	}
+
+	@Override
+	public AdminDTO changeAdminPassword(int adminId, String password) {
+		Admin admin=adminRepository.findById(adminId).orElse(new Admin());
+		 
+		admin.setAdminPassword(passwordEncoder.encode(password));
+		Admin adminTemp=adminRepository.save(admin);
+		
+		
+		 return new AdminDTO(adminTemp.getAdminId(),adminTemp.getAdminName(),adminTemp.getAdminPassword());
 	}
 
 

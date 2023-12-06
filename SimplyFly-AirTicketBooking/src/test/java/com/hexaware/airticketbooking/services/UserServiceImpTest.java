@@ -146,7 +146,7 @@ class UserServiceImpTest {
 	        when(userRepository.save(any(User.class))).thenReturn(user);
 
 	       
-	        UserDTO result = userService.changePassword(userId, newPassword);
+	        UserDTO result = userService.changeUserPassword(userId, newPassword);
 
 	       
 	        assertNotNull(result);

@@ -136,14 +136,14 @@ public class UserServiceImp implements IUserService {
 
 	
 	@Override
-	public UserDTO changePassword(int userId, String password)  {
+	public UserDTO changeUserPassword(int userId, String password)  {
 		 logger.info("Entering changePassword method with userId: {} and password: {}", userId, password);
 		 
 		User user=userRepository.findById(userId).orElse(null);
 		 if (user==null) {
 			throw new NullPointerException();
 		}
-		user.setPassword(password);
+		user.setPassword(passwordEncoder.encode(password));
 		User updatedUser=userRepository.save(user);
 		logger.info("User Service Implementation - Password changed successfully. User ID: {}", updatedUser.getUserId());
         logger.info("Exiting changePassword method with userId: {} and password: {}", userId, password);
@@ -224,6 +224,25 @@ public class UserServiceImp implements IUserService {
         }
 		return id;
     }
+
+	@Override
+	public boolean verifyuserpassword(String password, int userId) {
+		// TODO Auto-generated method stub
+		System.out.println(password);
+		User user=userRepository.findById(userId).orElse(new User());
+		boolean flag=false;
+		System.out.println(passwordEncoder.encode(password));
+		if(passwordEncoder.matches(password, user.getPassword())) {
+		  flag=true;
+	    }
+	    else {
+	    	flag=false;
+	    }
+	
+		return flag;
+	}
+	
+	
 	}
 
 

@@ -124,6 +124,8 @@ public class FlightServiceImp implements IFlightService {
 			flightDto.setTimeOfDeparture(flight.getTimeOfDeparture());
 			flightDto.setTypeOfFlight(flight.getTypeOfFlight());
 			flightDto.setFare(flight.getFare());
+			flightDto.setDuration(flight.getDuration());
+			flightDto.setNumberOfSeats(flight.getNumberOfSeats());
 			flightList.add(flightDto);
 		}
 			

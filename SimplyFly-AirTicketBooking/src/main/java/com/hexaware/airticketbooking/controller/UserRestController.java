@@ -24,7 +24,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.hexaware.airticketbooking.dto.UpdateUserDTO;
 import com.hexaware.airticketbooking.dto.UserDTO;
+import com.hexaware.airticketbooking.entities.User;
 import com.hexaware.airticketbooking.exceptions.UserNotFoundException;
+import com.hexaware.airticketbooking.services.EmailService;
 import com.hexaware.airticketbooking.services.IUserService;
 
 import jakarta.validation.Valid;
@@ -33,6 +35,7 @@ import jakarta.validation.Valid;
 @RequestMapping("/api/v1/user")
 @CrossOrigin(origins="http://localhost:4200/")
 public class UserRestController {
+	
 	private IUserService userService;
 	Logger logger = LoggerFactory.getLogger(UserRestController.class);
 
@@ -99,5 +102,10 @@ return userService.registerUser(userDto);
 	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
 	public boolean verifyUserPassword(@PathVariable int userId, @PathVariable String password) {
 		return userService.verifyuserpassword(password, userId);
+	}
+	@GetMapping("/sendmailonregistration/{userId}")
+	public boolean successRegistration(@PathVariable int userId) {
+		userService.sendEmailOnRegistration(userId);
+		return true;
 	}
 }

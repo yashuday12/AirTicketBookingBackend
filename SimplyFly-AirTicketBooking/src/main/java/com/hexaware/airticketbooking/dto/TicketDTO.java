@@ -22,6 +22,7 @@ public class TicketDTO {
     private double totalAmount;
     @Min(value = 1, message = "Number of passengers must be at least 1")
     private int numberOfPassengers;
+   
 	
 
 	public TicketDTO() {

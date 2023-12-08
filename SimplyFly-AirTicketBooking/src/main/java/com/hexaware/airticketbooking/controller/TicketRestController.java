@@ -110,5 +110,17 @@ public class TicketRestController {
 		}
 		return ticketDto;
 	}
+	 @GetMapping("/getflightid/{ticketId}")
+	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
+	public int getFlightIdBYTicketId(@PathVariable int ticketId) {
+		return ticketService.getFlightIdByTicketId(ticketId);
+	}
+
+		@GetMapping("/sendemailonbooking/{ticketId}")
+		@PreAuthorize("hasAnyAuthority('ROLE_USER')")
+		public boolean success(@PathVariable int ticketId) {
+			ticketService.sendEmailOnBooking(ticketId);
+			return true;
+		}
 	
 }

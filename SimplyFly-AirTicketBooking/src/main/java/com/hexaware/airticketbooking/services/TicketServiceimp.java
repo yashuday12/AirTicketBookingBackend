@@ -42,6 +42,8 @@ public class TicketServiceimp implements ITicketService {
 	private IUserRepository userRepository;
 	@Autowired
 	private IPaymentRepository paymentRepository;
+	@Autowired
+	EmailService emailService;
 	
 	public TicketServiceimp(ITicketRepository ticketRepository, IFlightRepository flightRepository,
 			IUserRepository userRepository) {
@@ -107,13 +109,13 @@ public class TicketServiceimp implements ITicketService {
 	public void cancelTicket(int ticketId) {
 		 logger.info("Ticket Service Implementation - Deleting Ticket with ID: {}", ticketId);
         Ticket ticket=ticketRepository.findById(ticketId).orElse(new Ticket());
-        Flight flight=ticket.getFlight();
+        
         User user=ticket.getUser();
-        int remainingSeats=flight.getNumberOfSeats()+ticket.getNumberOfPassengers();
+      
         long refundedAmount=(long) (user.getWallet()+ticket.getTotalAmount());       
-        flight.setNumberOfSeats(remainingSeats);
+       
         user.setWallet(refundedAmount);
-        flightRepository.save(flight);
+        
         userRepository.save(user);
 		ticketRepository.deleteById(ticketId);
 		logger.info("Ticket Service Implementation - Ticket Data with ID: {} deleted successfully.", ticketId);
@@ -125,6 +127,7 @@ public class TicketServiceimp implements ITicketService {
 		logger.info("Ticket Service Implementation - Fetching Ticket with ID: {}", ticketId);
 
 		Ticket ticket=ticketRepository.findById(ticketId).orElse(new Ticket());
+
 		logger.info("Ticket Service Implementation - Ticket fetched successfully for ID: {}", ticketId);
 
 		return new TicketDTO(ticket.getTicketId(),ticket.getTravelDate(),ticket.getEmail(),ticket.getTotalAmount(),ticket.getNumberOfPassengers());
@@ -144,7 +147,7 @@ public class TicketServiceimp implements ITicketService {
 
 		return ticketDto;
 	}
-
+    
 	
 
 	@Override
@@ -172,6 +175,28 @@ public class TicketServiceimp implements ITicketService {
         logger.info("Ticket Service Implementation - All tickets fetched successfully for flight owner ID: {}. Count: {}", flightOwnerId, ticketDto.size());
 
 		return ticketDto;
+	}
+
+	@Override
+	public int getFlightIdByTicketId(int ticketId) {
+		// TODO Auto-generated method stub
+		Ticket ticket=ticketRepository.findById(ticketId).orElse(new Ticket());
+		Flight flight=ticket.getFlight();
+		return flight.getFlightId();
+	}
+
+	@Override
+	public boolean sendEmailOnBooking(int ticketId) {
+		// TODO Auto-generated method stub
+		Ticket ticket=ticketRepository.findById(ticketId).orElse(new Ticket());
+		String subject = "Ticket confirmation";
+		String text="Hi " + "Your ticket has been successfully booked.\n"
+				+ "Your Ticket Id is " + ticket.getTicketId() + ".\n " + "Source : " + ticket.getFlight().getSource()
+				+ " Destination : " + ticket.getFlight().getDestination() + "\n" + "Departure Time : "
+				+ ticket.getFlight().getTimeOfDeparture() + " Arrival Time : " + ticket.getFlight().getTimeOfArrival()
+				+ "\n";
+		emailService.sendEmailForBooking(ticket.getEmail(), text, subject);
+        return true;
 	}
 
 }

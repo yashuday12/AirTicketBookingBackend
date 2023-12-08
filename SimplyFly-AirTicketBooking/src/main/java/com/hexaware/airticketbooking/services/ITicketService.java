@@ -17,7 +17,7 @@ public interface ITicketService {
 	public List<TicketDTO> veiwTicketDetails() throws TicketNotFoundException;// We can fetch all ticket details booked by all users
 	public List<TicketDTO> viewTicketBookedByUserId(int userId)throws TicketNotFoundException;// user can fetch his/her tickets by giving userId as refernce
 	public List<TicketDTO> getAllTicketsByFlightOwnerId(int flightOwnerId ) throws TicketNotFoundException;//flightowner can view all ticketdetails that are booked under flights addded by flightowner 
-
+    public int getFlightIdByTicketId(int ticketId);
 	
-
+    public boolean sendEmailOnBooking(int ticketId);
 }

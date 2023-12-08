@@ -38,25 +38,25 @@ import jakarta.validation.Valid;
 public class AdminRestController {
 	private IAdminService adminService;
     Logger logger = LoggerFactory.getLogger(AdminRestController.class);
-    // Constructor for AdminRestController
+    
 	public AdminRestController(IAdminService adminService) {
 		super();
 		this.adminService = adminService;
 	}
-    // Add a new admin
+   
 	@PostMapping("/addadmin")
 	public AdminDTO addAdmin(@RequestBody @Valid AdminDTO adminDto) {
         logger.info("Received request to add admin: {}", adminDto.getAdminName());
 		return adminService.addAdmin(adminDto);
 	}
-    // Update admin profile
+    
 	@PutMapping("/updateadmin/{adminId}")
 	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN')")
 	public UpdateAdminDTO editAdminProfile(@RequestBody @Valid UpdateAdminDTO adminDto,@PathVariable int adminId) {
         logger.info("Received request to update admin profile for adminId: {}", adminDto.getAdminId());
         return adminService.editAdminProfile(adminDto,adminId);
 	}
-    // Delete an admin account
+   
 	@DeleteMapping("/deleteadmin/{adminId}")
 	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN')")
 	public ResponseEntity<String> deleteAdminAccount(@PathVariable int adminId) {
@@ -64,7 +64,7 @@ public class AdminRestController {
         adminService.deleteAdminAccount(adminId);
 		return new ResponseEntity<>("admin deleted sucessfully", HttpStatus.ACCEPTED);
 	}
-    // Get admin profile by adminId
+   
 	@GetMapping("/getadminbyid/{adminId}")
 	@PreAuthorize("hasAnyAuthority('ROLE_ADMIN')")
 	public UpdateAdminDTO getAdminProfileById(@PathVariable int adminId) {
@@ -78,7 +78,7 @@ public class AdminRestController {
 		}
 		return admin;	
 	}
-    // Get all admins
+   
 	@GetMapping("/getalladmin")
 	public List<Admin> getAllAdmin(){
         logger.info("Received request to get all admins");

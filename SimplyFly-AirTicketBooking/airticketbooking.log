@@ -596,3 +596,675 @@
 2023-12-09T12:15:33.583+05:30  INFO 12944 --- [RMI TCP Connection(111)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-12-09T12:15:33.588+05:30  INFO 12944 --- [RMI TCP Connection(111)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2023-12-09T12:15:33.595+05:30  INFO 12944 --- [RMI TCP Connection(111)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-09T19:54:32.490+05:30  INFO 14060 --- [main] h.a.SimplyFlyAirTicketBookingApplication : Starting SimplyFlyAirTicketBookingApplication using Java 17.0.8.1 with PID 14060 (C:\Users\USER\AirTicketBookingBackend\SimplyFly-AirTicketBooking\target\classes started by USER in C:\Users\USER\AirTicketBookingBackend\SimplyFly-AirTicketBooking)
+2023-12-09T19:54:32.494+05:30  INFO 14060 --- [main] h.a.SimplyFlyAirTicketBookingApplication : No active profile set, falling back to 1 default profile: "default"
+2023-12-09T19:54:34.518+05:30  INFO 14060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-09T19:54:34.663+05:30  INFO 14060 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 7 JPA repository interfaces.
+2023-12-09T19:54:35.379+05:30  INFO 14060 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-12-09T19:54:35.389+05:30  INFO 14060 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-09T19:54:35.389+05:30  INFO 14060 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-12-09T19:54:35.482+05:30  INFO 14060 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-09T19:54:35.483+05:30  INFO 14060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2943 ms
+2023-12-09T19:54:35.623+05:30  INFO 14060 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-09T19:54:35.672+05:30  INFO 14060 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-12-09T19:54:35.826+05:30  WARN 14060 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-12-09T19:54:35.938+05:30  INFO 14060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-09T19:54:36.525+05:30  INFO 14060 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@429f0ca8
+2023-12-09T19:54:36.533+05:30  INFO 14060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-09T19:54:36.671+05:30  INFO 14060 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-12-09T19:54:37.952+05:30  INFO 14060 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-09T19:54:37.964+05:30  INFO 14060 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-09T19:54:39.459+05:30  WARN 14060 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-09T19:54:40.552+05:30  INFO 14060 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@22bd6b0a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@221383c9, org.springframework.security.web.context.SecurityContextHolderFilter@5fb4870b, org.springframework.security.web.header.HeaderWriterFilter@2f6fcc70, org.springframework.web.filter.CorsFilter@1a389b39, org.springframework.security.web.authentication.logout.LogoutFilter@8cd00bc, com.hexaware.airticketbooking.filter.JwtAuthFilter@318ca53a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7c3b8b26, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5113ab26, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@50a2034c, org.springframework.security.web.session.SessionManagementFilter@4b9b57d9, org.springframework.security.web.access.ExceptionTranslationFilter@57fd3b57, org.springframework.security.web.access.intercept.AuthorizationFilter@673ce246]
+2023-12-09T19:54:40.962+05:30  WARN 14060 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-12-09T19:54:40.965+05:30  INFO 14060 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-09T19:54:40.968+05:30  INFO 14060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-09T19:54:40.976+05:30  INFO 14060 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-12-09T19:54:40.978+05:30  INFO 14060 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-09T19:54:40.992+05:30  INFO 14060 --- [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-12-09T19:54:41.012+05:30 ERROR 14060 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-12-09T19:56:11.290+05:30  INFO 14800 --- [main] h.a.SimplyFlyAirTicketBookingApplication : Starting SimplyFlyAirTicketBookingApplication using Java 17.0.8.1 with PID 14800 (C:\Users\USER\AirTicketBookingBackend\SimplyFly-AirTicketBooking\target\classes started by USER in C:\Users\USER\AirTicketBookingBackend\SimplyFly-AirTicketBooking)
+2023-12-09T19:56:11.294+05:30  INFO 14800 --- [main] h.a.SimplyFlyAirTicketBookingApplication : No active profile set, falling back to 1 default profile: "default"
+2023-12-09T19:56:12.129+05:30  INFO 14800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-09T19:56:12.242+05:30  INFO 14800 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 93 ms. Found 7 JPA repository interfaces.
+2023-12-09T19:56:13.034+05:30  INFO 14800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8181 (http)
+2023-12-09T19:56:13.043+05:30  INFO 14800 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-12-09T19:56:13.044+05:30  INFO 14800 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.4]
+2023-12-09T19:56:13.138+05:30  INFO 14800 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-12-09T19:56:13.139+05:30  INFO 14800 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1790 ms
+2023-12-09T19:56:13.349+05:30  INFO 14800 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-09T19:56:13.407+05:30  INFO 14800 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-12-09T19:56:13.563+05:30  WARN 14800 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-12-09T19:56:13.681+05:30  INFO 14800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-12-09T19:56:14.028+05:30  INFO 14800 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2bcb1414
+2023-12-09T19:56:14.030+05:30  INFO 14800 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-12-09T19:56:14.091+05:30  INFO 14800 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-12-09T19:56:15.154+05:30  INFO 14800 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-12-09T19:56:15.177+05:30  INFO 14800 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-09T19:56:16.341+05:30  WARN 14800 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-09T19:56:17.048+05:30  INFO 14800 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1940bacd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7508912e, org.springframework.security.web.context.SecurityContextHolderFilter@10c9bd51, org.springframework.security.web.header.HeaderWriterFilter@4c24063c, org.springframework.web.filter.CorsFilter@1f9ec3e7, org.springframework.security.web.authentication.logout.LogoutFilter@1b42eb0f, com.hexaware.airticketbooking.filter.JwtAuthFilter@281a54b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6afd0ef8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47fe4c3e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4f86cd50, org.springframework.security.web.session.SessionManagementFilter@45dce9f7, org.springframework.security.web.access.ExceptionTranslationFilter@54e0b29c, org.springframework.security.web.access.intercept.AuthorizationFilter@7902a4d7]
+2023-12-09T19:56:17.414+05:30  INFO 14800 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8181 (http) with context path ''
+2023-12-09T19:56:17.424+05:30  INFO 14800 --- [main] h.a.SimplyFlyAirTicketBookingApplication : Started SimplyFlyAirTicketBookingApplication in 6.713 seconds (process running for 7.449)
+2023-12-09T20:15:00.779+05:30  INFO 14800 --- [http-nio-8181-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-12-09T20:15:00.780+05:30  INFO 14800 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-12-09T20:15:00.784+05:30  INFO 14800 --- [http-nio-8181-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-12-09T20:15:01.053+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.controller.LoginRestController     : Received request for user login for username: yashwanth
+2023-12-09T20:15:10.244+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.controller.LoginRestController     : Received request for user login for username: yashwanth
+2023-12-09T20:15:10.423+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Generating token for username: yashwanth
+2023-12-09T20:15:10.424+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Creating token for username: yashwanth
+2023-12-09T20:15:10.487+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.controller.LoginRestController     : User login successful for username: yashwanth
+2023-12-09T20:15:20.109+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:20.111+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:20.196+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:20.197+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:20.199+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:20.199+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:20.200+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:20.200+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:20.219+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.controller.UserRestController      : Received request to get all registered users
+2023-12-09T20:15:20.220+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.UserServiceImp            : User Service Implementation-Fetching all users from the repository
+2023-12-09T20:15:25.075+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:25.076+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:25.088+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:25.089+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:25.091+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:25.092+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:25.092+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:25.092+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:25.097+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.controller.TicketRestController    : Received request to view all ticket details
+2023-12-09T20:15:25.097+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets.
+2023-12-09T20:15:25.311+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully.
+2023-12-09T20:15:32.756+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:32.757+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:32.768+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:32.768+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:32.771+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:32.772+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:32.772+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:32.772+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:32.777+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.c.FlightOwnerRestController        : Received request to get all flight owners
+2023-12-09T20:15:32.778+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching all Flight Owners
+2023-12-09T20:15:34.224+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:34.225+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:34.237+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:34.237+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:34.240+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:34.241+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:34.241+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:34.242+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:34.247+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.controller.TicketRestController    : Received request to view all ticket details
+2023-12-09T20:15:34.248+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets.
+2023-12-09T20:15:34.349+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully.
+2023-12-09T20:15:39.791+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:39.793+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:39.799+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:39.799+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:39.802+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:39.802+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:39.802+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:39.802+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:39.811+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.controller.TicketRestController    : Received request to cancel ticket for ticketId: 1018
+2023-12-09T20:15:39.812+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Deleting Ticket with ID: 1018
+2023-12-09T20:15:39.969+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Ticket Data with ID: 1018 deleted successfully.
+2023-12-09T20:15:39.989+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:39.990+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:39.999+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:40.000+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:40.001+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:40.002+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:40.002+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:40.003+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:40.009+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.controller.TicketRestController    : Received request to view all ticket details
+2023-12-09T20:15:40.009+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets.
+2023-12-09T20:15:40.116+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully.
+2023-12-09T20:15:42.407+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:42.408+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:42.415+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:42.416+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:42.418+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:42.418+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:42.418+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:42.419+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:42.426+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.controller.TicketRestController    : Received request to cancel ticket for ticketId: 1017
+2023-12-09T20:15:42.426+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Deleting Ticket with ID: 1017
+2023-12-09T20:15:42.454+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Ticket Data with ID: 1017 deleted successfully.
+2023-12-09T20:15:42.483+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:42.483+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:42.493+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:42.494+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:42.497+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:42.498+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:42.498+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:42.498+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:42.507+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.controller.TicketRestController    : Received request to view all ticket details
+2023-12-09T20:15:42.508+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets.
+2023-12-09T20:15:42.599+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully.
+2023-12-09T20:15:45.253+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:45.254+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:45.260+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:45.260+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:45.264+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:45.264+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:45.264+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:45.264+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:45.271+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.controller.TicketRestController    : Received request to cancel ticket for ticketId: 1019
+2023-12-09T20:15:45.272+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Deleting Ticket with ID: 1019
+2023-12-09T20:15:45.295+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Ticket Data with ID: 1019 deleted successfully.
+2023-12-09T20:15:45.313+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:45.315+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:45.324+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:45.324+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:45.328+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:45.329+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:45.329+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:45.329+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:45.336+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.controller.TicketRestController    : Received request to view all ticket details
+2023-12-09T20:15:45.336+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets.
+2023-12-09T20:15:45.406+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully.
+2023-12-09T20:15:46.938+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:46.939+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:46.945+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:46.945+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:46.948+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:46.948+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:46.949+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:46.949+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:46.956+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.controller.TicketRestController    : Received request to cancel ticket for ticketId: 1020
+2023-12-09T20:15:46.956+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Deleting Ticket with ID: 1020
+2023-12-09T20:15:46.998+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Ticket Data with ID: 1020 deleted successfully.
+2023-12-09T20:15:47.015+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:47.015+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:47.036+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:47.036+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:47.039+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:47.039+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:47.039+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:47.039+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:47.043+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.controller.TicketRestController    : Received request to view all ticket details
+2023-12-09T20:15:47.044+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets.
+2023-12-09T20:15:47.110+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully.
+2023-12-09T20:15:48.291+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:48.292+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:48.297+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:48.297+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:48.300+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:48.300+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:48.300+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:48.300+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:48.306+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.controller.TicketRestController    : Received request to cancel ticket for ticketId: 1021
+2023-12-09T20:15:48.306+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Deleting Ticket with ID: 1021
+2023-12-09T20:15:48.343+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Ticket Data with ID: 1021 deleted successfully.
+2023-12-09T20:15:48.365+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:48.365+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:48.372+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:48.372+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:48.376+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:48.376+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:48.377+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:48.377+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:48.384+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.controller.TicketRestController    : Received request to view all ticket details
+2023-12-09T20:15:48.384+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets.
+2023-12-09T20:15:48.448+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully.
+2023-12-09T20:15:51.483+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:51.484+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:51.495+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:51.496+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:51.498+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:51.499+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:51.499+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:51.499+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:51.502+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.controller.UserRestController      : Received request to get all registered users
+2023-12-09T20:15:51.502+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.UserServiceImp            : User Service Implementation-Fetching all users from the repository
+2023-12-09T20:15:53.306+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:53.306+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:53.318+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:53.318+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:53.320+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:53.320+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:53.320+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:53.320+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:53.326+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.controller.AdminRestController     : Received request to get admin profile for adminId: 2
+2023-12-09T20:15:53.326+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.AdminServiceImp           : Admin Service Implementation-Fetching admin with ID :2
+2023-12-09T20:15:54.628+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:54.628+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:54.640+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:15:54.640+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:54.642+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:15:54.642+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:15:54.642+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:15:54.642+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:15:54.646+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.c.FlightOwnerRestController        : Received request to get all flight owners
+2023-12-09T20:15:54.646+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching all Flight Owners
+2023-12-09T20:16:03.149+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:16:03.150+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:16:03.157+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:16:03.158+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:16:03.162+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:16:03.162+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:16:03.162+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:16:03.162+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:16:15.852+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:16:15.852+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:16:15.858+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:16:15.858+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:16:15.861+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:16:15.861+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:16:15.861+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:16:15.861+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:16:25.663+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:16:25.664+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:16:25.672+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:16:25.672+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:16:25.674+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:16:25.674+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:16:25.674+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:16:25.674+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:16:31.383+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:16:31.384+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:16:31.395+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:16:31.395+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:16:31.397+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Validating token for username: yashwanth
+2023-12-09T20:16:31.397+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:16:31.397+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:16:31.397+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:16:31.400+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.controller.UserRestController      : Received request to get all registered users
+2023-12-09T20:16:31.400+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.UserServiceImp            : User Service Implementation-Fetching all users from the repository
+2023-12-09T20:16:51.353+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.controller.LoginRestController     : Received request for user login for username: surya
+2023-12-09T20:16:51.548+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Generating token for username: surya
+2023-12-09T20:16:51.548+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Creating token for username: surya
+2023-12-09T20:16:51.550+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.controller.LoginRestController     : User login successful for username: surya
+2023-12-09T20:17:01.795+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:17:01.797+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:17:01.812+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:17:01.812+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:17:01.814+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-09T20:17:01.814+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:17:01.814+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:17:01.814+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:17:01.820+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.controller.TicketRestController    : Received request to view all tickets booked for flight added by flightOwnerId: 3000
+2023-12-09T20:17:01.820+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets for flight owner ID: 3000
+2023-12-09T20:17:01.853+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully for flight owner ID: 3000. Count: 7
+2023-12-09T20:17:06.883+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:17:06.883+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:17:06.899+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:17:06.899+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:17:06.901+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-09T20:17:06.901+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:17:06.901+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:17:06.902+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:17:09.335+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:17:09.336+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:17:09.355+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:17:09.355+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:17:09.357+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-09T20:17:09.357+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:17:09.357+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:17:09.357+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:17:09.364+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.c.FlightOwnerRestController        : Received request to get flight owner details for flightOwnerId: 3000
+2023-12-09T20:17:09.370+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching Flight Owner with ID :3000
+2023-12-09T20:17:23.586+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:17:23.587+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:17:23.605+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:17:23.605+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:17:23.611+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-09T20:17:23.611+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:17:23.611+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:17:23.611+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:02.807+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:18:02.808+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:02.824+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:18:02.824+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:02.831+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-09T20:18:02.832+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:18:02.832+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:18:02.832+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:07.371+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:18:07.372+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:07.388+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:18:07.388+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:07.390+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-09T20:18:07.390+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:18:07.390+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:18:07.390+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:07.394+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.controller.TicketRestController    : Received request to view all tickets booked for flight added by flightOwnerId: 3000
+2023-12-09T20:18:07.394+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets for flight owner ID: 3000
+2023-12-09T20:18:07.417+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully for flight owner ID: 3000. Count: 7
+2023-12-09T20:18:22.952+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:18:22.952+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:22.971+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:18:22.971+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:22.973+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-09T20:18:22.974+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:18:22.974+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:18:22.974+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:31.692+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:18:31.692+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:31.706+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:18:31.706+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:31.708+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-09T20:18:31.709+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:18:31.709+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:18:31.709+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:31.714+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.c.FlightOwnerRestController        : Received request to get flight owner details for flightOwnerId: 3000
+2023-12-09T20:18:31.719+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching Flight Owner with ID :3000
+2023-12-09T20:18:49.774+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:18:49.774+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:49.784+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:18:49.784+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:49.786+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-09T20:18:49.786+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:18:49.786+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:18:49.786+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:54.846+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:18:54.847+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:54.866+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:18:54.866+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:54.868+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-09T20:18:54.868+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:18:54.868+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:18:54.868+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:18:54.873+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.controller.TicketRestController    : Received request to view all tickets booked for flight added by flightOwnerId: 3000
+2023-12-09T20:18:54.873+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching all tickets for flight owner ID: 3000
+2023-12-09T20:18:54.898+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - All tickets fetched successfully for flight owner ID: 3000. Count: 7
+2023-12-09T20:19:01.185+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:19:01.185+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:19:01.200+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:19:01.200+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:19:01.205+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Validating token for username: surya
+2023-12-09T20:19:01.205+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:19:01.205+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:19:01.205+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:19:01.213+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.c.FlightOwnerRestController        : Received request to get flight owner details for flightOwnerId: 3000
+2023-12-09T20:19:01.218+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.FlightownerServiceImp     : Flight Owner Service Implementation - Fetching Flight Owner with ID :3000
+2023-12-09T20:20:39.042+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.controller.LoginRestController     : Received request for user login for username: uday
+2023-12-09T20:20:45.877+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.controller.LoginRestController     : Received request for user login for username: uday
+2023-12-09T20:20:46.061+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Generating token for username: uday
+2023-12-09T20:20:46.062+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Creating token for username: uday
+2023-12-09T20:20:46.063+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.controller.LoginRestController     : User login successful for username: uday
+2023-12-09T20:20:52.820+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:20:52.820+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:20:52.829+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:20:52.829+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:20:52.832+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:20:52.832+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:20:52.832+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:20:52.832+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:20:52.837+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.controller.TicketRestController    : Received request to view tickets booked by userId: 100
+2023-12-09T20:20:52.837+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching Tickets for user ID: 100
+2023-12-09T20:20:52.883+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Tickets fetched successfully for user ID: 100
+2023-12-09T20:20:54.506+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:20:54.506+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:20:54.516+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:20:54.516+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:20:54.518+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:20:54.518+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:20:54.518+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:20:54.518+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:20:54.525+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.controller.PaymentRestController   : Received request to view payment history for ticketId: 100
+2023-12-09T20:20:54.526+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.PaymentService            : Payment Service - Viewing payment details for User ID: 100
+2023-12-09T20:20:54.565+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.PaymentService            : Payment Service - Payment details retrieved successfully for User ID: 100
+2023-12-09T20:21:07.559+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:21:07.559+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:21:07.568+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:21:07.568+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:21:07.571+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:21:07.571+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:21:07.571+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:21:07.571+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:21:07.576+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.controller.UserRestController      : Received request to get user details for userId: 100
+2023-12-09T20:21:07.577+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.UserServiceImp            : Entering getByUserId method with userId: 100
+2023-12-09T20:21:07.582+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.UserServiceImp            : User Service Implementation - User fetched successfully. User ID: 100
+2023-12-09T20:21:07.582+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.UserServiceImp            : Exiting getByUserId method with userId: 100
+2023-12-09T20:46:32.608+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.controller.FlightRestController    : Received request to search flights from Mumbai to Chennai
+2023-12-09T20:46:32.625+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Flight search from Mumbai to Chennai successful.
+2023-12-09T20:46:32.641+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.c.PassengerRestController          : Received request to fetch booked seats for travelDate: 2023-12-09 and flightId: 4007
+2023-12-09T20:46:32.651+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.PassenegrServiceImp       : Passenger Service - Based on the travelled date: 2023-12-09 and flight ID: 4007 fetched booked seats successfully
+2023-12-09T20:46:33.827+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.c.PassengerRestController          : Received request to fetch booked seats for travelDate: 2023-12-09 and flightId: 4007
+2023-12-09T20:46:33.828+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.PassenegrServiceImp       : Passenger Service - Based on the travelled date: 2023-12-09 and flight ID: 4007 fetched booked seats successfully
+2023-12-09T20:46:33.828+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:46:33.828+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:33.838+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:46:33.838+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:33.840+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:46:33.840+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:46:33.840+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:46:33.840+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:33.845+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4007
+2023-12-09T20:46:33.853+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4007
+2023-12-09T20:46:36.607+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:46:36.607+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:36.619+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:46:36.619+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:36.621+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:46:36.622+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:46:36.622+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:46:36.622+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:36.626+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4007
+2023-12-09T20:46:36.633+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4007
+2023-12-09T20:46:55.884+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:46:55.884+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:55.891+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:46:55.891+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:55.893+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:46:55.893+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:46:55.893+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:46:55.893+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:55.911+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.controller.TicketRestController    : Received request to book air ticket for userName: 100 and flightId: 4007
+2023-12-09T20:46:55.911+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Inserting ticket for user: 100 on flight ID: 4007
+2023-12-09T20:46:56.046+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Ticket inserted successfully. Ticket ID: 1040
+2023-12-09T20:46:56.061+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:46:56.062+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:56.071+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:46:56.072+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:56.074+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:46:56.074+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:46:56.074+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:46:56.074+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:56.076+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:46:56.077+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:56.088+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:46:56.088+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:56.091+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:46:56.092+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:46:56.092+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:46:56.092+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:56.102+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.controller.TicketRestController    : Received request to fetch booking details for ticketId: 1040
+2023-12-09T20:46:56.103+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching Ticket with ID: 1040
+2023-12-09T20:46:56.111+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Ticket fetched successfully for ID: 1040
+2023-12-09T20:46:56.119+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:46:56.119+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:56.127+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:46:56.127+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:56.129+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:46:56.129+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:46:56.129+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:46:56.129+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:56.136+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4007
+2023-12-09T20:46:56.142+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4007
+2023-12-09T20:46:56.155+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:46:56.155+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:56.163+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:46:56.163+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:56.165+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:46:56.166+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:46:56.166+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:46:56.166+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:46:56.172+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.c.PassengerRestController          : Received request to get passengers by ticketId: 1040
+2023-12-09T20:46:56.172+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.PassenegrServiceImp       : Passenger Service - Fetching passengers for ticket ID: 1040
+2023-12-09T20:46:56.179+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.PassenegrServiceImp       : Passenger Service - Passengers fetched successfully for ticket ID: 1040. Count: 1
+2023-12-09T20:47:36.380+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.controller.FlightRestController    : Received request to search flights from Mumbai to Chennai
+2023-12-09T20:47:36.386+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Flight search from Mumbai to Chennai successful.
+2023-12-09T20:47:36.397+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.c.PassengerRestController          : Received request to fetch booked seats for travelDate: 2023-12-09 and flightId: 4007
+2023-12-09T20:47:36.397+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.PassenegrServiceImp       : Passenger Service - Based on the travelled date: 2023-12-09 and flight ID: 4007 fetched booked seats successfully
+2023-12-09T20:47:37.542+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:47:37.542+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:37.546+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.c.PassengerRestController          : Received request to fetch booked seats for travelDate: 2023-12-09 and flightId: 4007
+2023-12-09T20:47:37.546+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.PassenegrServiceImp       : Passenger Service - Based on the travelled date: 2023-12-09 and flight ID: 4007 fetched booked seats successfully
+2023-12-09T20:47:37.552+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:47:37.553+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:37.557+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:47:37.557+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:47:37.557+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:47:37.557+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:37.562+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4007
+2023-12-09T20:47:37.566+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4007
+2023-12-09T20:47:40.161+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:47:40.162+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:40.171+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:47:40.172+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:40.174+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:47:40.174+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:47:40.174+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:47:40.174+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:40.181+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4007
+2023-12-09T20:47:40.184+05:30  INFO 14800 --- [http-nio-8181-exec-6] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4007
+2023-12-09T20:47:44.549+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:47:44.549+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:44.555+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.c.PassengerRestController          : Received request to fetch booked seats for travelDate: 2023-12-09 and flightId: 4007
+2023-12-09T20:47:44.555+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.PassenegrServiceImp       : Passenger Service - Based on the travelled date: 2023-12-09 and flight ID: 4007 fetched booked seats successfully
+2023-12-09T20:47:44.561+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:47:44.562+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:44.563+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:47:44.563+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:47:44.563+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:47:44.563+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:44.567+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4007
+2023-12-09T20:47:44.570+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4007
+2023-12-09T20:47:55.160+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:47:55.161+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:55.172+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:47:55.172+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:55.175+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:47:55.176+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:47:55.176+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:47:55.176+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:55.181+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4007
+2023-12-09T20:47:55.185+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4007
+2023-12-09T20:47:57.321+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:47:57.321+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:57.325+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.c.PassengerRestController          : Received request to fetch booked seats for travelDate: 2023-12-09 and flightId: 4007
+2023-12-09T20:47:57.326+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.PassenegrServiceImp       : Passenger Service - Based on the travelled date: 2023-12-09 and flight ID: 4007 fetched booked seats successfully
+2023-12-09T20:47:57.332+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:47:57.332+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:57.334+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:47:57.334+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:47:57.334+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:47:57.334+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:47:57.340+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4007
+2023-12-09T20:47:57.343+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4007
+2023-12-09T20:48:00.172+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:48:00.172+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:00.188+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:48:00.189+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:00.193+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:48:00.193+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:48:00.193+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:48:00.194+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:00.201+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4007
+2023-12-09T20:48:00.206+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4007
+2023-12-09T20:48:17.087+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:48:17.087+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.095+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:48:17.095+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.097+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:48:17.097+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:48:17.097+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:48:17.097+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.103+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.controller.TicketRestController    : Received request to book air ticket for userName: 100 and flightId: 4007
+2023-12-09T20:48:17.103+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Inserting ticket for user: 100 on flight ID: 4007
+2023-12-09T20:48:17.135+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Ticket inserted successfully. Ticket ID: 1041
+2023-12-09T20:48:17.145+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:48:17.145+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.153+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:48:17.154+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.156+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:48:17.156+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:48:17.156+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:48:17.156+05:30  INFO 14800 --- [http-nio-8181-exec-2] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.158+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:48:17.158+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.167+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:48:17.167+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.168+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:48:17.168+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:48:17.168+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:48:17.168+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.173+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.controller.TicketRestController    : Received request to fetch booking details for ticketId: 1041
+2023-12-09T20:48:17.173+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Fetching Ticket with ID: 1041
+2023-12-09T20:48:17.178+05:30  INFO 14800 --- [http-nio-8181-exec-7] c.h.a.services.TicketServiceimp          : Ticket Service Implementation - Ticket fetched successfully for ID: 1041
+2023-12-09T20:48:17.185+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:48:17.185+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.193+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:48:17.193+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.196+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:48:17.196+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:48:17.196+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:48:17.197+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.202+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4007
+2023-12-09T20:48:17.206+05:30  INFO 14800 --- [http-nio-8181-exec-5] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4007
+2023-12-09T20:48:17.218+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:48:17.218+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.227+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:48:17.227+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.229+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:48:17.229+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:48:17.229+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:48:17.229+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:17.234+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.c.PassengerRestController          : Received request to get passengers by ticketId: 1041
+2023-12-09T20:48:17.234+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.PassenegrServiceImp       : Passenger Service - Fetching passengers for ticket ID: 1041
+2023-12-09T20:48:17.241+05:30  INFO 14800 --- [http-nio-8181-exec-3] c.h.a.services.PassenegrServiceImp       : Passenger Service - Passengers fetched successfully for ticket ID: 1041. Count: 1
+2023-12-09T20:48:35.435+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.controller.FlightRestController    : Received request to search flights from Mumbai to Chennai
+2023-12-09T20:48:35.440+05:30  INFO 14800 --- [http-nio-8181-exec-8] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Flight search from Mumbai to Chennai successful.
+2023-12-09T20:48:35.448+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.c.PassengerRestController          : Received request to fetch booked seats for travelDate: 2023-12-09 and flightId: 4007
+2023-12-09T20:48:35.448+05:30  INFO 14800 --- [http-nio-8181-exec-10] c.h.a.services.PassenegrServiceImp       : Passenger Service - Based on the travelled date: 2023-12-09 and flight ID: 4007 fetched booked seats successfully
+2023-12-09T20:48:37.301+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:48:37.301+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:37.309+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.c.PassengerRestController          : Received request to fetch booked seats for travelDate: 2023-12-09 and flightId: 4007
+2023-12-09T20:48:37.309+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.PassenegrServiceImp       : Passenger Service - Based on the travelled date: 2023-12-09 and flight ID: 4007 fetched booked seats successfully
+2023-12-09T20:48:37.314+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting username from token
+2023-12-09T20:48:37.315+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:37.317+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Validating token for username: uday
+2023-12-09T20:48:37.317+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Checking if token is expired
+2023-12-09T20:48:37.317+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting expiration from token
+2023-12-09T20:48:37.317+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.JwtService                : Extracting all claims from token
+2023-12-09T20:48:37.324+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.controller.FlightRestController    : Received request to get flight details for flightId: 4007
+2023-12-09T20:48:37.328+05:30  INFO 14800 --- [http-nio-8181-exec-1] c.h.a.services.FlightServiceImp          : Flight Service Implementation - Fetching Flight with ID :4007
+2023-12-09T20:51:23.974+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.controller.LoginRestController     : Received request for user login for username: uday
+2023-12-09T20:51:24.075+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Generating token for username: uday
+2023-12-09T20:51:24.076+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.services.JwtService                : Creating token for username: uday
+2023-12-09T20:51:24.076+05:30  INFO 14800 --- [http-nio-8181-exec-9] c.h.a.controller.LoginRestController     : User login successful for username: uday
+2023-12-09T20:51:38.905+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.controller.LoginRestController     : Received request for user login for username: surya
+2023-12-09T20:51:39.097+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Generating token for username: surya
+2023-12-09T20:51:39.097+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.services.JwtService                : Creating token for username: surya
+2023-12-09T20:51:39.099+05:30  INFO 14800 --- [http-nio-8181-exec-4] c.h.a.controller.LoginRestController     : User login successful for username: surya
+2023-12-09T20:51:52.223+05:30  INFO 14800 --- [RMI TCP Connection(59)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2023-12-09T20:51:52.271+05:30  INFO 14800 --- [RMI TCP Connection(59)-127.0.0.1] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-12-09T20:51:52.274+05:30  INFO 14800 --- [RMI TCP Connection(59)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-12-09T20:51:52.287+05:30  WARN 14800 --- [RMI TCP Connection(59)-127.0.0.1] o.a.c.loader.WebappClassLoaderBase       : The web application [ROOT] appears to have started a thread named [HikariPool-1 housekeeper] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.8.1/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.8.1/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.8.1/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.8.1/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.8.1/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.8.1/java.lang.Thread.run(Thread.java:833)
+2023-12-09T20:51:52.322+05:30  INFO 14800 --- [RMI TCP Connection(59)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-12-09T20:51:52.347+05:30  INFO 14800 --- [RMI TCP Connection(59)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-12-09T20:51:52.362+05:30  INFO 14800 --- [RMI TCP Connection(59)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

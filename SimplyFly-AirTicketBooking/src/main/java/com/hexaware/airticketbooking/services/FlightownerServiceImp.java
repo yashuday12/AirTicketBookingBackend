@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 import com.hexaware.airticketbooking.dto.FlightOwnerDTO;
 import com.hexaware.airticketbooking.dto.UpdateFlightOwnerDTO;
 import com.hexaware.airticketbooking.entities.FlightOwner;
-import com.hexaware.airticketbooking.entities.User;
+
 import com.hexaware.airticketbooking.exceptions.FlightOwnerNotFoundException;
 import com.hexaware.airticketbooking.repository.IFlightOwnerRepository;
 /*

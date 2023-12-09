@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.hexaware.airticketbooking.dto.UpdateUserDTO;
 import com.hexaware.airticketbooking.dto.UserDTO;
-import com.hexaware.airticketbooking.entities.User;
+
 import com.hexaware.airticketbooking.exceptions.UserNotFoundException;
 /*
  * Author: Yashwanth

@@ -7,7 +7,7 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 import com.hexaware.airticketbooking.entities.FlightOwner;
-import com.hexaware.airticketbooking.entities.User;
+
 /*
  * Author:Yashwanth
  * LastModifiedDate:15-11-2023

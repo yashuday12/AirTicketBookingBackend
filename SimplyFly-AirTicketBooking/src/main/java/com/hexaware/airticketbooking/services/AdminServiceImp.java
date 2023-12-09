@@ -8,10 +8,9 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.hexaware.airticketbooking.dto.AdminDTO;
-import com.hexaware.airticketbooking.dto.FlightOwnerDTO;
+
 import com.hexaware.airticketbooking.dto.UpdateAdminDTO;
 import com.hexaware.airticketbooking.entities.Admin;
-import com.hexaware.airticketbooking.entities.FlightOwner;
 import com.hexaware.airticketbooking.exceptions.AdminNotFoundException;
 import com.hexaware.airticketbooking.repository.IAdminRepository;
 /*
@@ -65,6 +64,7 @@ public class AdminServiceImp implements IAdminService {
 		UpdateAdminDTO adminDTO=new UpdateAdminDTO();
 		adminDTO.setAdminId(admin.getAdminId());
 		adminDTO.setAdminName(admin.getAdminName());
+		
 		return adminDTO;
 		
 		

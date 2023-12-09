@@ -43,7 +43,7 @@ public class TicketRestController {
 	@PreAuthorize("hasAnyAuthority('ROLE_USER')")
 	public TicketDTO bookAirTicket(@RequestBody TicketPassengerVO ticketPassengerVo ,@PathVariable int userId, @PathVariable int flightId) {
         logger.info("Received request to book air ticket for userName: {} and flightId: {}", userId, flightId);
-        System.out.println(ticketPassengerVo);
+  
 		return ticketService.bookAirTicket(ticketPassengerVo, userId, flightId);
 
 	}

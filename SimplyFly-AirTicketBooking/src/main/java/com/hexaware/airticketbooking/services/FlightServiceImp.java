@@ -111,7 +111,7 @@ public class FlightServiceImp implements IFlightService {
 
 	@Override
 	public List<FlightDTO> getFlightDetailsByFlightOwnerId(int flightOwnerId) {
-		// TODO Auto-generated method stub
+
 		List<Flight> flights=flightRepository.getFlightsByFlightOwnerId(flightOwnerId);
 		List<FlightDTO> flightList=new ArrayList<FlightDTO>();
 		for (Flight flight : flights) {

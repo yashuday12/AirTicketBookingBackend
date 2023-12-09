@@ -7,6 +7,8 @@ import java.util.Optional;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -33,8 +35,9 @@ public class UserServiceImp implements IUserService {
 	private IUserRepository userRepository;
 	private IAdminRepository adminRepository;
 	private IFlightOwnerRepository flightOwnerRepository;
-	@Autowired
-	EmailService emailService;
+	 @Autowired
+	 private JavaMailSender mailSender;
+	
 	public UserServiceImp(PasswordEncoder passwordEncoder, IUserRepository userRepository,IAdminRepository adminRepository,IFlightOwnerRepository flightOwnerRepository) {
 		super();
 		this.passwordEncoder = passwordEncoder;
@@ -163,7 +166,13 @@ public class UserServiceImp implements IUserService {
 		String text = "Hi " + user.getUserName() + "\n " + " You have been Successfully registered. \n"
 				+ "Your userId is " + user.getUserId() + ".\n " + "Please use this to login";
 
-		emailService.sendEmailOnRegistration(user.getUserEmail(), text, subject);
+
+    	SimpleMailMessage message = new SimpleMailMessage();
+    	message.setTo(user.getUserEmail());
+        message.setSubject(subject);
+        message.setText(text);
+
+        mailSender.send(message);
 	
 	}
 
@@ -236,11 +245,11 @@ public class UserServiceImp implements IUserService {
 
 	@Override
 	public boolean verifyuserpassword(String password, int userId) {
-		// TODO Auto-generated method stub
-		System.out.println(password);
+
+		
 		User user=userRepository.findById(userId).orElse(new User());
 		boolean flag=false;
-		System.out.println(passwordEncoder.encode(password));
+		
 		if(passwordEncoder.matches(password, user.getPassword())) {
 		  flag=true;
 	    }

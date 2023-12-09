@@ -11,6 +11,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.mail.SimpleMailMessage;
+import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.stereotype.Service;
 
 import com.hexaware.airticketbooking.dto.PassengerDTO;
@@ -42,8 +44,9 @@ public class TicketServiceimp implements ITicketService {
 	private IUserRepository userRepository;
 	@Autowired
 	private IPaymentRepository paymentRepository;
-	@Autowired
-	EmailService emailService;
+	 @Autowired
+	 private JavaMailSender mailSender;
+
 	
 	public TicketServiceimp(ITicketRepository ticketRepository, IFlightRepository flightRepository,
 			IUserRepository userRepository) {
@@ -179,7 +182,7 @@ public class TicketServiceimp implements ITicketService {
 
 	@Override
 	public int getFlightIdByTicketId(int ticketId) {
-		// TODO Auto-generated method stub
+		
 		Ticket ticket=ticketRepository.findById(ticketId).orElse(new Ticket());
 		Flight flight=ticket.getFlight();
 		return flight.getFlightId();
@@ -187,7 +190,7 @@ public class TicketServiceimp implements ITicketService {
 
 	@Override
 	public boolean sendEmailOnBooking(int ticketId) {
-		// TODO Auto-generated method stub
+		
 		Ticket ticket=ticketRepository.findById(ticketId).orElse(new Ticket());
 		String subject = "Ticket confirmation";
 		String text="Hi " + "Your ticket has been successfully booked.\n"
@@ -195,7 +198,12 @@ public class TicketServiceimp implements ITicketService {
 				+ " Destination : " + ticket.getFlight().getDestination() + "\n" + "Departure Time : "
 				+ ticket.getFlight().getTimeOfDeparture() + " Arrival Time : " + ticket.getFlight().getTimeOfArrival()
 				+ "\n";
-		emailService.sendEmailForBooking(ticket.getEmail(), text, subject);
+		SimpleMailMessage message = new SimpleMailMessage();
+		message.setTo(ticket.getEmail());
+		message.setSubject(subject);
+		message.setText(text);
+		mailSender.send(message);
+    
         return true;
 	}
 

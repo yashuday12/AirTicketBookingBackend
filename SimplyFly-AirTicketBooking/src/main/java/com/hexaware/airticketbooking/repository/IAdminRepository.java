@@ -8,7 +8,7 @@ import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import com.hexaware.airticketbooking.entities.Admin;
-import com.hexaware.airticketbooking.entities.User;
+
 /*
  * Author:Yashwanth
  * LastModifiedDate:15-11-2023

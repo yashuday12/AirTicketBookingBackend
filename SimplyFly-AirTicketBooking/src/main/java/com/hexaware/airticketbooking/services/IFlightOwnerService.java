@@ -4,10 +4,9 @@ import java.util.List;
 
 import com.hexaware.airticketbooking.dto.FlightOwnerDTO;
 import com.hexaware.airticketbooking.dto.UpdateFlightOwnerDTO;
-import com.hexaware.airticketbooking.dto.UserDTO;
+
 import com.hexaware.airticketbooking.exceptions.FlightOwnerNotFoundException;
 
-import jakarta.validation.Valid;
 
 /*
  * Author: Yashwanth

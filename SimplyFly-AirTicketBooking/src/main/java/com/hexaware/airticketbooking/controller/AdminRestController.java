@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.hexaware.airticketbooking.dto.AdminDTO;
 import com.hexaware.airticketbooking.dto.UpdateAdminDTO;
-import com.hexaware.airticketbooking.dto.UserDTO;
+
 import com.hexaware.airticketbooking.entities.Admin;
 import com.hexaware.airticketbooking.exceptions.AdminNotFoundException;
 import com.hexaware.airticketbooking.services.IAdminService;

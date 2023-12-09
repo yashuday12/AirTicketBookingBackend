@@ -24,9 +24,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.hexaware.airticketbooking.dto.UpdateUserDTO;
 import com.hexaware.airticketbooking.dto.UserDTO;
-import com.hexaware.airticketbooking.entities.User;
+
 import com.hexaware.airticketbooking.exceptions.UserNotFoundException;
-import com.hexaware.airticketbooking.services.EmailService;
+
 import com.hexaware.airticketbooking.services.IUserService;
 
 import jakarta.validation.Valid;
